@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Bebas Neue;
+    src: url("../font/BebasNeue Regular.ttf");
+    src: url("../font/BebasNeue Book.ttf");
+}
+
+@font-face {
+    font-family: Bold;
+    src: url("../font/NexaBold.otf");
+}
+
+@font-face {
+    font-family: NexaLight;
+    src: url("../font/NexaLight.otf");
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../font/ProximaNova-Regular.eot');
+    src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+    url('../font/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../font/ProximaNova-Regular.woff') format('woff'),
+    url('../font/ProximaNova-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../font/ProximaNova-Bold.eot');
+    src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+    url('../font/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/ProximaNova-Bold.woff') format('woff'),
+    url('../font/ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    min-width: 1600px;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.sites_div {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    background-size: cover;
+}
+
+.sites_div:hover {
+    opacity: 0.7;
+}
+
+.bicycle {
+    background-image: url("../img/bicycle.jpg");
+    font-size: 30px;
+    color: #4d4959;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.bicycle_text {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+}
+
+.brandly {
+    background-image: url("../img/brandly.jpg");
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.brandly-first {
+    color: rgba(220, 0, 0, 0.8);
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.brandly-last {
+    color: rgba(220, 0, 0, 0.8);
+    font-size: 36px;
+    padding-top: 4px;
+}
+
+.jwood {
+    background-image: url("../img/j-wood.jpg");
+    font-family: "NexaLight", sans-serif;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.jwood_bold {
+    font-family: "NexaBold", sans-serif;
+}
+
+.magmagazine {
+    font-family: "Georgia", serif;
+    background-color: #e0e0e0;
+    color: #282828;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.oneluke {
+    background: url("../img/oneluke.png"), linear-gradient(to right top, #2c9998, #6fb88d);
+    font-family: 'Raleway', sans-serif;
+    color: #fefefe;
+    font-weight: 100;
+    font-size: 36px;
+}
+
+.oneluke:hover {
+    background-image: url("../img/oneluke.png");
+}
+
+.dronezone {
+    font-family: 'Proxima Nova Rg';
+    font-size: 36px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-bottom: 10px;
+    background-image: url("../img/dronezone.jpg");
+}
+
+.dronezone_light {
+    font-family: 'Proxima Nova Lt';
+}
+
+.themodernist {
+    background-color: #290000;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 28px;
+    font-family: 'Georgia', serif;
+}
+
+.sedona {
+    background-image: url("../img/sedona.jpg");
+    font-family: 'PT Sans', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.lookshop {
+    background: #fff;
+}
