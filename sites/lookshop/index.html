@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lookshop</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="header-top_left">custom care: 123 456 789</div>
+                <div class="header-top_right">
+                    <select name="currency" id="currency" class="header-top_right_select">
+                        <option value="US" class="header-top_right_select_option">$ US</option>
+                        <option value="EU" class="header-top_right_select_option">€ EU</option>
+                    </select>
+                    <a href="#" class="header-top_right_account">MY ACCOUNT</a>
+                    <a href="#" class="header-top_right_search">
+                        <div class="header-top_right_search_svg"></div>
+                    </a>
+                </div>
+            </div>
+            <div class="header-main">
+                <a href="#" class="header-main_logo">l
+                    <span class="header-main_logo_img"></span>kshop</a>
+                <div class="header-main_cart">
+                    <a href="#" class="header-main_cart_show">Your cart</a>
+                    <div class="header-main_cart_total">
+                        <a href="#" class="header-main_cart_total_items">0 ITEMS</a>
+                        <a href="#" class="header-main_cart_total_price">| $ 0</a>
+                    </div>
+                </div>
+                <nav class="header-main_menu">
+                    <a href="#" class="header-main_swap-menu">MENU<div class="header-main_swap-menu_lines"><div class="header-main_swap-menu_lines_line"></div><div class="header-main_swap-menu_lines_line"></div><div class="header-main_swap-menu_lines_line"></div></div></a>
+                    <ul class="header-main_menu_ul">
+                        <li class="header-main_menu_li"><a href="#" class="header-main_menu_li_link">new</a></li>
+                        <li class="header-main_menu_li"><a href="#" class="header-main_menu_li_link">disigners</a></li>
+                        <li class="header-main_menu_li"><a href="#" class="header-main_menu_li_link">women</a></li>
+                        <li class="header-main_menu_li"><a href="#" class="header-main_menu_li_link">men</a></li>
+                        <li class="header-main_menu_li"><a href="#" class="header-main_menu_li_link">clearence</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-promo">
+                <div class="header-promo_main">
+                    <button class="header-promo_main_arrow-left" onclick="buttonLeft()">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="18px">
+                            <path fill-rule="evenodd" opacity="0.2" fill="rgb(0, 0, 0)" d="M11.990,15.053 L8.995,17.990 L0.011,9.178 L0.192,9.000 L0.011,8.822 L8.995,0.010 L11.990,2.947 L5.818,9.000 L11.990,15.053 Z" />
+                        </svg>
+                    </button>
+                    <button class="header-promo_main_arrow-right" onclick="buttonRight()">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="18px">
+                            <path fill-rule="evenodd" opacity="0.2" fill="rgb(0, 0, 0)" d="M11.990,9.178 L3.005,17.990 L0.010,15.053 L6.182,9.000 L0.010,2.947 L3.005,0.010 L11.990,8.822 L11.808,9.000 L11.990,9.178 Z" />
+                        </svg>
+                    </button>
+                    <div class="header-promo_main_logo">
+                        <p class="header-promo_main_logo_text-top">Crazy</p>
+                        <p class="header-promo_main_logo_text-middle">CRAZY SUMMER</p>
+                        <div class="header-promo-main_logo_line"></div>
+                        <div class="header-promo-main_logo_line-thin"></div>
+                        <p class="header-promo_main_logo_text-bottom">WOMAN COLLECTION</p>
+                        <a href="#" class="header-promo_main_logo_btn">SHOP NOW</a>
+                    </div>
+                    <div class="header-promo_main_select">
+                        <input type="radio" name="radio-main" id="radio-main_1" class="header-promo_main_select_radio" checked>
+                        <input type="radio" name="radio-main" id="radio-main_2" class="header-promo_main_select_radio">
+                        <input type="radio" name="radio-main" id="radio-main_3" class="header-promo_main_select_radio">
+                        <input type="radio" name="radio-main" id="radio-main_4" class="header-promo_main_select_radio">
+                        <input type="radio" name="radio-main" id="radio-main_5" class="header-promo_main_select_radio">
+                        <label for="radio-main_1" id="radio-main_label_1" class="header-promo_main_select_label"></label>
+                        <label for="radio-main_2" id="radio-main_label_2" class="header-promo_main_select_label"></label>
+                        <label for="radio-main_3" id="radio-main_label_3" class="header-promo_main_select_label"></label>
+                        <label for="radio-main_4" id="radio-main_label_4" class="header-promo_main_select_label"></label>
+                        <label for="radio-main_5" id="radio-main_label_5" class="header-promo_main_select_label"></label>
+                        <label for="radio-main_1" id="radio_label_1" class="header-promo_select_label"></label>
+                        <label for="radio-main_2" id="radio_label_2" class="header-promo_select_label"></label>
+                        <label for="radio-main_3" id="radio_label_3" class="header-promo_select_label"></label>
+                        <label for="radio-main_4" id="radio_label_4" class="header-promo_select_label"></label>
+                        <label for="radio-main_5" id="radio_label_5" class="header-promo_select_label"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="subscribe">
+            <div class="container">
+                <form class="subscribe_form">
+                    <h2 class="subscribe_form_text">Stay updated</h2>
+                    <input type="text" class="subscribe_form_input" placeholder="Your email address">
+                    <button class="subscribe_form_button">
+                        <svg class="subscribe_form_button_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37px" height="37px">
+                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M37.000,23.941 L23.941,23.941 L23.941,37.000 L13.059,37.000 L13.059,23.941 L0.000,23.941 L0.000,13.059 L13.059,13.059 L13.059,0.000 L23.941,0.000 L23.941,13.059 L37.000,13.059 L37.000,23.941 Z" />
+                        </svg>
+                    </button>
+                </form>
+                <div class="subscribe_socials">
+                    <p class="subscribe_socials_text">Find us here</p>
+                    <div class="subscribe_socials_container">
+                        <a href="#" class="subscribe_socials_facebook"></a>
+                        <a href="#" class="subscribe_socials_twitter"></a>
+                        <a href="#" class="subscribe_socials_pinterest"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="promo">
+            <div class="container">
+                <a href="#" class="promo_left">
+                    <div class="promo_left_img"></div>
+                    <div class="promo_left_logo">
+                        <p class="promo_left_logo_text-1">BEST</p>
+                        <p class="promo_left_logo_text-2">OUTFITS</p>
+                        <p class="promo_left_logo_text-3">&</p>
+                        <p class="promo_left_logo_text-4">LOOKS</p>
+                    </div>
+                </a>
+                <div class="promo_right">
+                    <a href="#" class="promo_right_top">
+                        <div class="promo_right_top_img"></div>
+                        <div class="promo_right_top_logo">
+                            <p class="promo_right_top_logo_text-1">Summer</p>
+                            <p class="promo_right_top_logo_text-2">PARTY</p>
+                            <p class="promo_right_top_logo_text-3">COLLECTION</p>
+                        </div>
+                    </a>
+                    <a href="#" class="promo_right_bottom_left">
+                        <div class="promo_right_bottom_left_img"></div>
+                        <div class="promo_right_bottom_left_logo">
+                            <p class="promo_right_bottom_left_logo_text">BEST SELLERS</p><span class="promo_right_bottom_left_logo_arrow"></span></div>
+                    </a>
+                    <a href="#" class="promo_right_bottom_right">
+                        <div class="promo_right_bottom_right_img"></div>
+                        <div class="promo_right_bottom_right_logo">
+                            <div class="promo_right_bottom_right_logo_text">FALL LEATHER</div>
+                            <div class="promo_right_bottom_right_logo_btn">SHOP NOW <span class="promo_right_bottom_right_logo_btn_icon"></span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="hot">
+            <div class="container">
+                <div class="hot_header">
+                    <select class="hot_header_mobile-menu">
+                        <option value="hot_1" class="hot_header_mobile-menu_option">WHAT'S HOT</option>
+                        <option value="hot_2" class="hot_header_mobile-menu_option">DESIGNERS</option>
+                        <option value="hot_3" class="hot_header_mobile-menu_option">FEATURED</option>
+                        <option value="hot_4" class="hot_header_mobile-menu_option">LATEST</option>
+                    </select>
+                    <form class="hot_header_menu">
+                        <input type="radio" name="hot-select" id="hot-select_1" class="hot_header_menu_select" checked>
+                        <input type="radio" name="hot-select" id="hot-select_2" class="hot_header_menu_select">
+                        <input type="radio" name="hot-select" id="hot-select_3" class="hot_header_menu_select">
+                        <input type="radio" name="hot-select" id="hot-select_4" class="hot_header_menu_select">
+                        <label for="hot-select_1" class="hot_header_menu_label">WHAT'S HOT</label>
+                        <label for="hot-select_2" class="hot_header_menu_label">DESIGNERS</label>
+                        <label for="hot-select_3" class="hot_header_menu_label">FEATURED</label>
+                        <label for="hot-select_4" class="hot_header_menu_label">LATEST</label>
+                    </form>
+                    <div class="hot_header_buttons">
+                        <button class="hot_header_button" id="goToPrevSlide"></button>
+                        <button class="hot_header_button" id="goToNextSlide"></button>
+                    </div>
+                </div>
+                <div class="hot_body">
+                    <ul class="hot_body_cards body_cards" id="lightSlider">
+                        <li class="hot_body_card body_card mobile_card">
+                            <div class="hot_body_card_div body_card_div">
+                                <p class="hot_body_card_description card_description">MIMOSA LACE DRESS</p>
+                                <p class="hot_body_card_price card_price">$76.95</p>
+                                <a href="#" class="hot_body_card_btn orange_btn">ADD TO CART
+                                    <svg class="hot_body_card_btn_svg orange_btn_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="25px">
+                                  <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M17.000,11.000 L11.000,11.000 L11.000,17.000 L6.000,17.000 L6.000,11.000 L-0.000,11.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L11.000,-0.000 L11.000,6.000 L17.000,6.000 L17.000,11.000 Z" />
+                                 </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="hot_body_card body_card mobile_card">
+                            <div class="hot_body_card_div body_card_div">
+                                <p class="hot_body_card_description card_description">WISHVITALISE DRESS</p>
+                                <p class="hot_body_card_price card_price">$96.95</p>
+                                <a href="#" class="hot_body_card_btn orange_btn">ADD TO CART
+                                    <svg class="hot_body_card_btn_svg orange_btn_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="25px">
+                                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M17.000,11.000 L11.000,11.000 L11.000,17.000 L6.000,17.000 L6.000,11.000 L-0.000,11.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L11.000,-0.000 L11.000,6.000 L17.000,6.000 L17.000,11.000 Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="hot_body_card body_card tablet_card">
+                            <div class="hot_body_card_div body_card_div sale_card">
+                                <p class="hot_body_card_description card_description">WISHVITALISE DRESS</p>
+                                <p class="hot_body_card_price card_price">$96.95</p>
+                                <a href="#" class="hot_body_card_btn orange_btn">ADD TO CART
+                                    <svg class="hot_body_card_btn_svg orange_btn_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="25px">
+                                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M17.000,11.000 L11.000,11.000 L11.000,17.000 L6.000,17.000 L6.000,11.000 L-0.000,11.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L11.000,-0.000 L11.000,6.000 L17.000,6.000 L17.000,11.000 Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="hot_body_card body_card tablet_card">
+                            <div class="hot_body_card_div body_card_div">
+                                <p class="hot_body_card_description card_description">WISHVITALISE DRESS</p>
+                                <p class="hot_body_card_price card_price">$96.95</p>
+                                <a href="#" class="hot_body_card_btn orange_btn">ADD TO CART
+                                    <svg class="hot_body_card_btn_svg orange_btn_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="25px">
+                                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M17.000,11.000 L11.000,11.000 L11.000,17.000 L6.000,17.000 L6.000,11.000 L-0.000,11.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L11.000,-0.000 L11.000,6.000 L17.000,6.000 L17.000,11.000 Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="hot_body_card body_card tablet_card">
+                            <div class="hot_body_card_div body_card_div">
+                                <p class="hot_body_card_description card_description">WISHVITALISE DRESS</p>
+                                <p class="hot_body_card_price card_price">$96.95</p>
+                                <a href="#" class="hot_body_card_btn orange_btn">ADD TO CART
+                                    <svg class="hot_body_card_btn_svg orange_btn_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="25px">
+                                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M17.000,11.000 L11.000,11.000 L11.000,17.000 L6.000,17.000 L6.000,11.000 L-0.000,11.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L11.000,-0.000 L11.000,6.000 L17.000,6.000 L17.000,11.000 Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="hot_body_card body_card tablet_card">
+                            <div class="hot_body_card_div body_card_div">
+                                <p class="hot_body_card_description card_description">WISHVITALISE DRESS</p>
+                                <p class="hot_body_card_price card_price">$96.95</p>
+                                <a href="#" class="hot_body_card_btn orange_btn">ADD TO CART
+                                    <svg class="hot_body_card_btn_svg orange_btn_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17px" height="25px">
+                                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M17.000,11.000 L11.000,11.000 L11.000,17.000 L6.000,17.000 L6.000,11.000 L-0.000,11.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L11.000,-0.000 L11.000,6.000 L17.000,6.000 L17.000,11.000 Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="hot_body_btn black_btn">LOAD MORE</a>
+                </div>
+            </div>
+        </section>
+        <section class="clearance">
+            <div class="container">
+                <div class="clearance_logo">
+                    <h2 class="clearance_logo_text">CLEARANCE</h2>
+                    <div class="clearance_logo_bottom">
+                        <p class="clearance_logo_text_big">50</p>
+                        <div class="clearance_logo_bottom_div">
+                            <p class="clearance_logo_text">%</p>
+                            <p class="clearance_logo_text">OFF</p>
+                        </div>
+                    </div>
+                    <svg class="clearance_logo_svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="157px" height="157px">
+                        <path fill-rule="evenodd" fill="rgb(82, 82, 82)" d="M157.000,78.499 C157.000,81.391 152.652,84.014 152.339,86.822 C152.020,89.690 155.677,93.208 155.049,95.971 C154.411,98.777 149.587,100.367 148.649,103.047 C147.701,105.758 150.478,110.006 149.242,112.569 C147.996,115.151 142.939,115.621 141.421,118.032 C139.895,120.455 141.656,125.216 139.876,127.447 C138.091,129.681 133.057,129.018 131.037,131.038 C129.017,133.058 129.681,138.092 127.446,139.877 C125.215,141.657 120.454,139.896 118.031,141.421 C115.620,142.939 115.150,147.996 112.567,149.242 C110.005,150.478 105.758,147.701 103.046,148.650 C100.366,149.587 98.777,154.411 95.971,155.049 C93.208,155.676 89.691,152.019 86.823,152.339 C84.014,152.652 81.392,157.000 78.500,157.000 C75.607,157.000 72.985,152.652 70.176,152.339 C67.308,152.019 63.791,155.676 61.028,155.049 C58.221,154.410 56.632,149.587 53.952,148.649 C51.241,147.701 46.993,150.478 44.431,149.241 C41.848,147.995 41.378,142.939 38.966,141.420 C36.543,139.895 31.782,141.655 29.552,139.875 C27.317,138.091 27.981,133.057 25.961,131.037 C23.941,129.017 18.907,129.680 17.123,127.445 C15.342,125.216 17.103,120.454 15.577,118.031 C14.059,115.620 9.003,115.150 7.757,112.567 C6.521,110.005 9.298,105.758 8.349,103.046 C7.411,100.366 2.588,98.777 1.951,95.970 C1.323,93.208 4.980,89.690 4.660,86.822 C4.347,84.014 -0.001,81.391 -0.001,78.499 C-0.001,75.607 4.347,72.985 4.660,70.176 C4.980,67.308 1.323,63.790 1.951,61.028 C2.588,58.221 7.411,56.632 8.349,53.952 C9.298,51.240 6.521,46.992 7.757,44.430 C9.003,41.847 14.060,41.377 15.578,38.966 C17.104,36.543 15.343,31.782 17.124,29.552 C18.908,27.317 23.942,27.980 25.962,25.960 C27.982,23.940 27.319,18.907 29.553,17.122 C31.783,15.342 36.544,17.102 38.968,15.577 C41.379,14.058 41.849,9.002 44.432,7.757 C46.994,6.521 51.241,9.297 53.953,8.348 C56.633,7.411 58.221,2.588 61.028,1.950 C63.791,1.322 67.309,4.979 70.176,4.660 C72.985,4.346 75.607,-0.002 78.500,-0.002 C81.392,-0.002 84.014,4.346 86.823,4.660 C89.691,4.979 93.208,1.322 95.971,1.950 C98.778,2.588 100.367,7.411 103.047,8.349 C105.758,9.297 110.006,6.521 112.569,7.757 C115.151,9.003 115.621,14.059 118.033,15.577 C120.456,17.103 125.217,15.343 127.447,17.123 C129.682,18.908 129.019,23.941 131.038,25.961 C133.059,27.981 138.091,27.318 139.876,29.553 C141.657,31.783 139.896,36.544 141.422,38.967 C142.940,41.378 147.996,41.849 149.242,44.432 C150.478,46.994 147.701,51.241 148.650,53.952 C149.587,56.632 154.411,58.221 155.049,61.028 C155.677,63.790 152.020,67.308 152.339,70.175 C152.652,72.984 157.000,75.607 157.000,78.499 Z" />
+                    </svg>
+                    <svg class="clearance_logo_svg" width="148px " height="148px ">
+                        <path fill-rule="evenodd " stroke-width="1px " stroke="rgb(255, 255, 255) " fill="rgb(82, 82, 82) " d="M144.500,73.999 C144.500,76.597 140.595,78.952 140.314,81.475 C140.027,84.050 143.312,87.209 142.748,89.690 C142.174,92.211 137.843,93.639 137.000,96.045 C136.149,98.480 138.643,102.295 137.533,104.597 C136.413,106.916 131.872,107.338 130.508,109.504 C129.139,111.680 130.720,115.956 129.121,117.958 C127.518,119.966 122.997,119.370 121.183,121.184 C119.369,122.998 119.965,127.519 117.958,129.122 C115.955,130.720 111.679,129.139 109.503,130.509 C107.337,131.872 106.915,136.414 104.596,137.532 C102.294,138.642 98.480,136.148 96.044,137.001 C93.638,137.842 92.211,142.175 89.690,142.748 C87.209,143.311 84.050,140.027 81.475,140.314 C78.952,140.595 76.597,144.500 74.000,144.500 C71.402,144.500 69.047,140.595 66.524,140.314 C63.949,140.027 60.790,143.311 58.309,142.748 C55.788,142.174 54.361,137.842 51.954,137.000 C49.519,136.148 45.704,138.642 43.403,137.532 C41.083,136.413 40.661,131.872 38.495,130.508 C36.319,129.138 32.043,130.719 30.041,129.120 C28.033,127.518 28.629,122.997 26.815,121.183 C25.001,119.369 20.480,119.964 18.878,117.957 C17.279,115.955 18.860,111.678 17.490,109.502 C16.126,107.337 11.585,106.915 10.466,104.595 C9.356,102.295 11.850,98.480 10.998,96.045 C10.156,93.638 5.825,92.211 5.252,89.690 C4.688,87.209 7.972,84.049 7.685,81.475 C7.404,78.952 3.499,76.597 3.499,73.999 C3.499,71.402 7.404,69.047 7.685,66.524 C7.972,63.949 4.688,60.790 5.252,58.308 C5.825,55.788 10.156,54.360 10.998,51.953 C11.851,49.518 9.357,45.703 10.467,43.402 C11.586,41.083 16.127,40.661 17.490,38.495 C18.861,36.319 17.280,32.043 18.879,30.040 C20.481,28.033 25.002,28.629 26.816,26.815 C28.630,25.001 28.035,20.480 30.042,18.878 C32.044,17.279 36.320,18.859 38.496,17.489 C40.662,16.126 41.084,11.585 43.404,10.466 C45.705,9.356 49.519,11.850 51.954,10.998 C54.361,10.156 55.788,5.824 58.309,5.251 C60.790,4.688 63.949,7.972 66.524,7.685 C69.047,7.404 71.402,3.498 74.000,3.498 C76.597,3.498 78.952,7.404 81.475,7.685 C84.050,7.972 87.209,4.688 89.690,5.251 C92.212,5.824 93.638,10.156 96.045,10.998 C98.480,11.850 102.296,9.356 104.597,10.466 C106.916,11.586 107.338,16.126 109.504,17.490 C111.680,18.860 115.956,17.279 117.959,18.878 C119.966,20.481 119.370,25.001 121.184,26.816 C122.999,28.630 127.518,28.034 129.121,30.041 C130.720,32.043 129.139,36.320 130.510,38.496 C131.873,40.661 136.414,41.084 137.533,43.403 C138.643,45.705 136.149,49.519 137.001,51.954 C137.843,54.361 142.174,55.788 142.748,58.308 C143.312,60.790 140.027,63.949 140.314,66.524 C140.595,69.046 144.500,71.402 144.500,73.999 Z " />
+                    </svg>
+                </div>
+                <div class="clearance_body ">
+                    <ul class="clearance_body_cards body_cards ">
+                        <li class="clearance_body_card body_card mobile_card ">
+                            <div class="clearance_body_card_div body_card_div ">
+                                <p class="clearance_body_card_description card_description ">MIMOSA LACE DRESS</p>
+                                <p class="clearance_body_card_price card_price ">$76.95</p>
+                                <a href="# " class="clearance_body_card_btn orange_btn ">ADD TO CART
+                                    <svg class="clearance_body_card_btn_svg orange_btn_svg" width="17px" height="25px">
+                                  <path fill-rule="evenodd " fill="rgb(255, 255, 255) " d="M17.000,11.000 L11.000,11.000 L11.000,17.000 L6.000,17.000 L6.000,11.000 L-0.000,11.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L11.000,-0.000 L11.000,6.000 L17.000,6.000 L17.000,11.000 Z " />
+                                 </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="clearance_body_card body_card mobile_card">
+                            <div class="clearance_body_card_div body_card_div sale_card">
+                                <p class="clearance_body_card_description card_description ">WISHVITALISE DRESS</p>
+                                <p class="clearance_body_card_price card_price ">$96.95</p>
+                                <a href="# " class="clearance_body_card_btn orange_btn ">ADD TO CART
+                                    <svg class="clearance_body_card_btn_svg orange_btn_svg" width="17px" height="25px">
+                                        <path fill-rule="evenodd" fill="rgb(255, 255, 255) " d="M17.000,11.000 L11.000,11.000 L11.000,17.000 L6.000,17.000 L6.000,11.000 L-0.000,11.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L11.000,-0.000 L11.000,6.000 L17.000,6.000 L17.000,11.000 Z " />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="clearance_body_card body_card tablet_card ">
+                            <div class="clearance_body_card_div body_card_div ">
+                                <p class="clearance_body_card_description card_description ">WISHVITALISE DRESS</p>
+                                <p class="clearance_body_card_price card_price ">$96.95</p>
+                                <a href="# " class="clearance_body_card_btn orange_btn ">ADD TO CART
+                                    <svg class="clearance_body_card_btn_svg orange_btn_svg" width="17px" height="25px">
+                                        <path fill-rule="evenodd " fill="rgb(255, 255, 255) " d="M17.000,11.000 L11.000,11.000 L11.000,17.000 L6.000,17.000 L6.000,11.000 L-0.000,11.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L11.000,-0.000 L11.000,6.000 L17.000,6.000 L17.000,11.000 Z " />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="clearance_body_card body_card desktop_card">
+                            <div class="clearance_body_card_div body_card_div ">
+                                <p class="clearance_body_card_description card_description ">WISHVITALISE DRESS</p>
+                                <p class="clearance_body_card_price card_price ">$96.95</p>
+                                <a href="# " class="clearance_body_card_btn orange_btn ">ADD TO CART
+                                    <svg class="clearance_body_card_btn_svg orange_btn_svg" width="17px" height="25px">
+                                        <path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M17.000,11.000 L11.000,11.000 L11.000,17.000 L6.000,17.000 L6.000,11.000 L-0.000,11.000 L-0.000,6.000 L6.000,6.000 L6.000,-0.000 L11.000,-0.000 L11.000,6.000 L17.000,6.000 L17.000,11.000 Z " />
+                                    </svg>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="clearance_body_btn black_btn">LOAD MORE</a>
+                </div>
+            </div>
+        </section>
+        <section class="brands">
+            <div class="container">
+                <div class="brands_list">
+                    <h2 class="brands_list_header">FAVOURITE BRANDS</h2>
+                    <a href="#" class="brands_list_brand"></a>
+                    <a href="#" class="brands_list_brand"></a>
+                    <a href="#" class="brands_list_brand"></a>
+                    <a href="#" class="brands_list_brand"></a>
+                    <a href="#" class="brands_list_brand"></a>
+                    <a href="#" class="brands_list_brand"></a>
+                    <a href="#" class="brands_list_brand brand_desktop"></a>
+                    <a href="#" class="brands_list_brand brand_desktop"></a>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h2 class="about_h2">About LookShop</h2>
+                <p class="about_text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. </p>
+            </div>
+        </section>
+        <section class="pay">
+            <div class="container">
+                <div class="pay_list">
+                    <h2 class="pay_list_text">We accept</h2>
+                    <img src="img/pay_cards.png" alt="" class="pay_list_img">
+                </div>
+            </div>
+        </section>
+        <section class="links">
+            <div class="container">
+                <div class="links_block_left">
+                    <div class="links_block_top">
+                        <ul class="links_block_ul">
+                            <li class="links_block_ul_li">
+                                <h3 class="links_block_ul_li_h3">Customer Service</h3></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Contact</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">FAQ</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Terms of payment</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Terms of sale</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Delivery items and comditions</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Returns and Refunds</a></li>
+                        </ul>
+                        <ul class="links_block_ul">
+                            <li class="links_block_ul_li">
+                                <h3 class="links_block_ul_li_h3">Information</h3></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Affilate</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Cookies</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">How to Shop</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">About Nelly</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Investor relations</a></li>
+                        </ul>
+                    </div>
+                    <div class="links_block_bottom">
+                        <ul class="links_block_ul">
+                            <li class="links_block_ul_li">
+                                <h3 class="links_block_ul_li_h3">Campaigns</h3></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Evening dresses</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Makeup</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Fashion forward</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Training clothes</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Special Occasion Dresses</a></li>
+                        </ul>
+                        <ul class="links_block_ul">
+                            <li class="links_block_ul_li">
+                                <h3 class="links_block_ul_li_h3">Stores</h3></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Paris</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">New York</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">London</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Madrid</a></li>
+                            <li class="links_block_ul_li"><a href="#" class="links_block_ul_li_link">Tokyo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="links_block_right">
+                <div class="links_socials">
+                    <h3 class="links_socials_h3">Social</h3>
+                    <div class="links_socials_container">
+                        <a href="#" class="links_socials_link"></a>
+                        <a href="#" class="links_socials_link"></a>
+                        <a href="#" class="links_socials_link"></a>
+                        <a href="#" class="links_socials_link"></a>
+                        <a href="#" class="links_socials_link"></a>
+                        <a href="#" class="links_socials_link"></a>
+                    </div>
+                </div>
+                <div class="links_logo">
+                    <p class="links_logo_text-big">100%</p>
+                    <p class="links_logo_text-small">SECURED</p>
+                </div></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <nav class="footer_menu">
+                <a href="# " class="footer_swap-menu">
+                    <div class="footer_swap-menu_lines">
+                        <div class="footer_swap-menu_lines_line"></div>
+                        <div class="footer_swap-menu_lines_line"></div>
+                        <div class="footer_swap-menu_lines_line"></div>
+                    </div>
+                </a>
+                <ul class="footer_menu_ul">
+                    <li class="footer_menu_li"><a href="#" class="footer_menu_li_link">Privacy & Cookies</a></li>
+                    <li class="footer_menu_li"><a href="#" class="footer_menu_li_link">Terms & Conditions</a></li>
+                    <li class="footer_menu_li"><a href="#" class="footer_menu_li_link">Accessibility</a></li>
+                    <li class="footer_menu_li"><a href="#" class="footer_menu_li_link">Store Directory</a></li>
+                    <li class="footer_menu_li"><a href="#" class="footer_menu_li_link">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="footer_copyright">
+                <a href="# " class="footer_copyright_link">© LookShop.com</a>
+                <p class="footer_copyright_text">All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/sstu_script.js"></script>
+    <script>
+    function buttonLeft() {
+        var j;
+        for (var i = 1; i <= 5; i++) {
+            var select_id = 'radio-main_' + i;
+            if (document.getElementById(select_id).checked) {
+                j = i - 1;
+            }
+        }
+        if (j > 0) {
+            var select_id = 'radio-main_' + j;
+            document.getElementById(select_id).checked = true;
+        } else {
+            var select_id = 'radio-main_' + 5;
+            document.getElementById(select_id).checked = true;
+        }
+    };
+
+    function buttonRight() {
+        var j;
+        for (var i = 1; i < 5; i++) {
+            var select_id = 'radio-main_' + i;
+            if (document.getElementById(select_id).checked) {
+                j = i + 1;
+            }
+        }
+        if (j <= 5) {
+            var select_id = 'radio-main_' + j;
+            document.getElementById(select_id).checked = true;
+        } else {
+            var select_id = 'radio-main_' + 1;
+            document.getElementById(select_id).checked = true;
+        }
+    };
+    </script>
+    <script src="js/lightslider.js"></script>
+    <script>
+    if ($(window).width() >= 768) {
+        $(document).ready(function() {
+            var slider = $('#lightSlider').lightSlider({
+                item: 1,
+                autoWidth: true,
+                slideMove: 1, // slidemove will be 1 if loop is true
+                slideMargin: 50,
+
+                addClass: '',
+                mode: "slide",
+                useCSS: true,
+                cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',//
+                easing: 'linear', //'for jquery animation',////
+
+                speed: 400, //ms'
+                auto: false,
+                loop: false,
+                slideEndAnimation: true,
+                pause: 2000,
+
+                keyPress: false,
+                controls: false,
+                prevHtml: '',
+                nextHtml: '',
+
+                rtl: false,
+                adaptiveHeight: false,
+
+                vertical: false,
+                verticalHeight: 500,
+                vThumbWidth: 100,
+
+                thumbItem: 10,
+                pager: false,
+                gallery: false,
+                galleryMargin: 5,
+                thumbMargin: 5,
+                currentPagerPosition: 'middle',
+
+                enableTouch: true,
+                enableDrag: true,
+                freeMove: true,
+                swipeThreshold: 40,
+
+                responsive: [],
+
+                onBeforeStart: function(el) {},
+                onSliderLoad: function(el) {},
+                onBeforeSlide: function(el) {},
+                onAfterSlide: function(el) {},
+                onBeforeNextSlide: function(el) {},
+                onBeforePrevSlide: function(el) {}
+            });
+            $('#goToPrevSlide').click(function() {
+                slider.goToPrevSlide();
+            });
+            $('#goToNextSlide').click(function() {
+                slider.goToNextSlide();
+            });
+        });
+    }
+    </script>
+</body>
+
+</html>
