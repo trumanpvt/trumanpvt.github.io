@@ -1,0 +1,909 @@
+/*    * {
+        outline: 1px solid red;
+    }*/
+body {
+  min-width: 750px;
+  max-width: 1537px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #000; }
+
+.container {
+  width: 86.67%;
+  max-width: 2000px;
+  margin: 0 auto; }
+
+header {
+  background: url("../img/header-bg_iphone.jpg") no-repeat;
+  background-size: cover;
+  position: relative; }
+
+header .container {
+  height: 1366px;
+  position: relative; }
+
+.header-nav_menu {
+  display: none;
+  position: absolute;
+  top: 115px;
+  right: 7%;
+  z-index: 2; }
+
+.swap-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 81px;
+  height: 58px;
+  top: 52px;
+  right: 18px; }
+
+.swap-menu_line {
+  width: 100%;
+  height: 15.52%;
+  border-radius: 10px;
+  background: #bebebe; }
+
+.header-nav_menu_li {
+  background: #bebebe;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #000;
+  border-bottom: none; }
+
+.header-nav_menu_li:last-child {
+  border-bottom: 1px solid #000; }
+
+.header-nav_menu_a {
+  font-family: Dosis, sans-serif;
+  font-size: 20px;
+  color: #606060; }
+
+.header-nav_menu_a:hover {
+  border-bottom: 2px solid #000; }
+
+.header-logo {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 25%;
+  left: 50%;
+  display: block;
+  width: 82.92%; }
+
+.header-logo_img {
+  width: 100%;
+  height: 100%; }
+
+.section_h2 {
+  position: relative;
+  text-align: center;
+  font-family: Dosis, sans-serif;
+  font-size: 50.49px;
+  line-height: 59.27px;
+  letter-spacing: 6px;
+  margin: 110px auto 40px; }
+
+.discography {
+  height: 2400px;
+  background: url("../img/discography-bg.jpg");
+  background-position: 50% 100%;
+  background-size: 200% auto; }
+
+.tours {
+  background: url("../img/tours-bg.jpg");
+  height: 1300px;
+  background-size: auto 75%;
+  background-position: 90% 100%; }
+
+.discography,
+.tours,
+.compositions,
+.upcoming,
+.history,
+.contact .container {
+  position: relative;
+  z-index: 1;
+  background-repeat: no-repeat; }
+
+.discography_h2 {
+  color: transparent;
+  background: url("../img/discography-h2.png");
+  position: relative;
+  width: 338px;
+  height: 37px;
+  z-index: 2; }
+
+.discography:after,
+.tours:after,
+.compositions:after,
+.upcoming:after,
+.history:after,
+.contact .container:after {
+  width: 66.67%;
+  height: 1px;
+  position: absolute;
+  content: "";
+  background: #000;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 20px;
+  left: 50%; }
+
+.section_description {
+  font-size: 15px;
+  color: #7a8083;
+  text-align: center;
+  letter-spacing: 2px; }
+
+.section_year,
+.section_name,
+.section_h3,
+.section_text,
+.section_btn,
+.section_description,
+.upcoming_tour_h3,
+.upcoming_tour_text,
+.upcoming_tour_date,
+.numbers_header_h2,
+.numbers_header_text,
+.numbers_header_date,
+.contact_address,
+.contact_form_btn {
+  line-height: 24.27px; }
+
+.section_year,
+.section_name,
+.section_text,
+.section_btn,
+.contact_address {
+  font-size: 15px; }
+
+.section_year,
+.section_name,
+.section_btn,
+.contact_form_btn {
+  font-weight: bold; }
+
+.section_year {
+  color: #7f7f7f;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px; }
+
+.section_name {
+  padding-top: 5px; }
+
+.section_h3 {
+  font-size: 24px;
+  padding-bottom: 26px; }
+
+.discography_year {
+  padding-top: 108px; }
+
+.discography_h3 {
+  padding-top: 40px; }
+
+.discography_text {
+  color: #aaaaaa; }
+
+.section_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 196px;
+  height: 56px;
+  color: #000; }
+
+.discography_btn {
+  margin: 44px auto 0;
+  background-image: url("../img/discography_btn.jpg"); }
+
+.discography_list_album:nth-child(3) .discography_btn {
+  background-image: url("../img/discography_btn.jpg");
+  background-position: 0 56px; }
+
+.discography_list_album:nth-child(2) .discography_btn {
+  background-image: url("../img/discography_btn.jpg");
+  background-position: 0 112px; }
+
+.discography_btn:hover {
+  color: #fff;
+  background-image: url("../img/discography_btn_active.jpg"); }
+
+.discography_list_album:nth-child(2) .discography_btn:hover {
+  background-image: url("../img/discography_btn_active.jpg");
+  background-position: 0 56px; }
+
+.discography_list_album:nth-child(3) .discography_btn:hover {
+  background-image: url("../img/discography_btn_active.jpg");
+  background-position: 0 112px; }
+
+.tours_h2 {
+  background: -webkit-linear-gradient(#779da6, #98b5ae);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.tours:after {
+  top: 142px; }
+
+.tours .container,
+.tours_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%; }
+
+.tours_list {
+  width: 60.62%;
+  height: 616px; }
+
+.tours_h3 {
+  font-size: 23px; }
+
+.tours_text {
+  color: #7a8083; }
+
+.transparent_btn {
+  font-size: 14px;
+  border: 1px solid #aeaeae; }
+
+.tours_list_btn {
+  margin-bottom: 50px; }
+
+.section_btn_icon {
+  margin-left: 15px; }
+
+.transparent_btn:hover {
+  border-color: #000; }
+
+.compositions:after {
+  top: 30px;
+  width: 81.33%; }
+
+.compositions_list {
+  margin: 40px 0 110px; }
+
+.compositions_list_li {
+  margin: 0 auto;
+  width: 92.31%;
+  margin-bottom: 50px; }
+
+.compositions_list_footer,
+.compositions_list_footer_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.compositions_list_li_container {
+  background-color: #f5f6f6;
+  padding: 36px;
+  position: relative;
+  z-index: 2; }
+
+.compositions_list_li_container:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 11px 0 11px;
+  border-color: #f5f6f6 transparent transparent transparent;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: -13px;
+  left: 50%; }
+
+.compositions_list_header {
+  width: 65.33%; }
+
+.compositions_list_body {
+  margin: 40px 0 57px; }
+
+.compositions_list_text {
+  height: 70px;
+  overflow: hidden;
+  color: #7a8083; }
+
+.compositions_list_footer {
+  height: 56px; }
+
+.compositions_list_footer_list {
+  width: 60%;
+  padding: 0 35px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.compositions_list_footer_list_li_a {
+  font-size: 12px;
+  color: #979898;
+  position: relative; }
+
+.compositions_list_footer_list_li_a:before {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMjYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyMjYgMTYiPiAgPG1ldGFkYXRhPjw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+PHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxNDAgNzkuMTYwNDUxLCAyMDE3LzA1LzA2LTAxOjA4OjIxICAgICAgICAiPiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+ICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIvPiAgIDwvcmRmOlJERj48L3g6eG1wbWV0YT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDw/eHBhY2tldCBlbmQ9InciPz48L21ldGFkYXRhPjxkZWZzPiAgICA8c3R5bGU+ICAgICAgLmNscy0xIHsgICAgICAgIGZpbGw6ICM5Nzk4OTg7ICAgICAgICBmaWxsLW9wYWNpdHk6IDAuODsgICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsgICAgICB9ICAgIDwvc3R5bGU+ICA8L2RlZnM+ICA8cGF0aCBpZD0iU3BlZWNoX2J1YmJsZV8tX2xlZnRfdGlwXy1fdGV4dCIgZGF0YS1uYW1lPSJTcGVlY2ggYnViYmxlIC0gbGVmdCB0aXAgLSB0ZXh0IiBjbGFzcz0iY2xzLTEiIGQ9Ik01MDUsNTQ4Mi41OXYyLjVhMSwxLDAsMCwxLTEsMUg0OTRhMSwxLDAsMCwxLTEtMXYtNWExLjAwNywxLjAwNywwLDAsMSwuNTM5LTAuODgsOC4xLDguMSwwLDAsMSwxLjIyMS0yLjEySDQ5NGEzLDMsMCwwLDAtMywzdjVhMywzLDAsMCwwLDMsMi45OWgxMGEzLDMsMCwwLDAsMy0yLjk5di00Wm0xLjYtMy43LTQsM2EwLjk4NCwwLjk4NCwwLDAsMS0xLjA0Ny4wOSwwLjk5MywwLjk5MywwLDAsMS0uNTUzLTAuODl2LTFhNiw2LDAsMCwwLTUuNjUxLDQsNS45ODYsNS45ODYsMCwwLDEsNS42NTEtOHYtMWEwLjk5MywwLjk5MywwLDAsMSwuNTUzLTAuODksMC45ODQsMC45ODQsMCwwLDEsMS4wNDcuMDlsNCwzYTAuOTk0LDAuOTk0LDAsMCwxLC40LjhBMS4wMDgsMS4wMDgsMCwwLDEsNTA2LjYsNTQ3OC44OVptLTY2Ljc4LDIuMjNMNDMzLDU0ODguMTlsLTYuODIxLTcuMDdhNCw0LDAsMCwxLDUuNjU3LTUuNjVsMS4xNjQsMS40MSwxLjE2NC0xLjQxQTQsNCwwLDEsMSw0MzkuODIxLDU0ODEuMTJaTTM0Niw1NDg1LjE5YTMsMywwLDAsMS0zLTN2LTJhMywzLDAsMCwxLDMtM2gxbDUtMy45OXYxNS45OWwtNS00aC0xWm0xMC00YTQsNCwwLDAsMS0zLDMuODZ2LTIuMTRhMS45NzksMS45NzksMCwwLDAsMC0zLjQ0di0yLjE0QTQsNCwwLDAsMSwzNTYsNTQ4MS4xOVptMjEwLjE4OSw0Ljk5aC01LjYyNWwtMS44NzUsMi44MS0xLjg3NS0yLjgxYTIuODE1LDIuODE1LDAsMCwxLTIuODEzLTIuODJ2LTYuNTZhMi44MTMsMi44MTMsMCwwLDEsMi44MTMtMi44MWg5LjM3NUEyLjgxMiwyLjgxMiwwLDAsMSw1NjksNTQ3Ni44djYuNTZBMi44MTQsMi44MTQsMCwwLDEsNTY2LjE5MSw1NDg2LjE4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM0MyAtNTQ3My4xOSkiLz48L3N2Zz4=);
+  background-repeat: no-repeat;
+  top: 0;
+  left: -22px; }
+
+.compositions_list_footer_list_li:nth-child(2) .compositions_list_footer_list_li_a:before {
+  background-position: -82px -1px; }
+
+.compositions_list_footer_list_li:nth-child(3) .compositions_list_footer_list_li_a:before {
+  background-position: -148px -1px; }
+
+.compositions_list_footer_list_li:nth-child(4) .compositions_list_footer_list_li_a:before {
+  background-position: -211px 0; }
+
+.compositions_list_div-video {
+  position: relative; }
+
+.compositions_list_div-video_video {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.compositions_list_div-video_img {
+  width: 100%;
+  height: 100%; }
+
+.numbers_header {
+  background: url("../img/numbers-bg.jpg") no-repeat;
+  background-size: cover;
+  text-align: center;
+  position: relative; }
+
+.numbers_header .container {
+  height: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 70px;
+  position: relative; }
+
+.numbers_header_btn_left,
+.numbers_header_btn_right {
+  display: none; }
+
+.numbers_header_h2 {
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fff;
+  padding: 24px 0 34px; }
+
+.numbers_header_text {
+  font-size: 15px;
+  color: #7a8083;
+  height: 75px;
+  overflow: hidden; }
+
+.numbers_header_date {
+  font-size: 14px;
+  color: #565e61;
+  padding-top: 63px; }
+
+.numbers_header_form {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  bottom: 13.44%;
+  width: 110px;
+  height: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.numbers_header_radio {
+  display: none; }
+
+.numbers_header_label {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #fff; }
+
+#numbers_radio-1:checked ~ label[for="numbers_radio-1"],
+#numbers_radio-2:checked ~ label[for="numbers_radio-2"],
+#numbers_radio-3:checked ~ label[for="numbers_radio-3"] {
+  background: none;
+  border: 1px solid #fff; }
+
+.numbers_list_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 55px auto 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1500px; }
+
+.numbers_list_li {
+  width: 384px;
+  height: 422px;
+  padding: 34px;
+  margin: 0 22.5px 55px 22.5px;
+  background: url("../img/numbers_list-bg_1.jpg"); }
+
+.numbers_list_year {
+  font-size: 14px; }
+
+.numbers_list_name {
+  color: #fff; }
+
+.numbers_list_h3 {
+  padding: 40px 0 30px; }
+
+.numbers_list_text {
+  height: 170px;
+  overflow: hidden;
+  color: #7a8083; }
+
+.numbers_list_li:hover {
+  background: url("../img/numbers_list-bg_1_hover.jpg"); }
+
+.numbers_list_li:nth-child(2) {
+  background: url("../img/numbers_list-bg_2.jpg"); }
+
+.numbers_list_li:nth-child(3) {
+  background: url("../img/numbers_list-bg_3.jpg"); }
+
+.numbers_list_li:nth-child(4) {
+  background: url("../img/numbers_list-bg_4.jpg"); }
+
+.numbers_list_li:nth-child(5) {
+  background: url("../img/numbers_list-bg_5.jpg"); }
+
+.numbers_list_li:nth-child(6) {
+  background: url("../img/numbers_list-bg_6.jpg"); }
+
+.upcoming:after {
+  top: 30px; }
+
+.upcoming {
+  height: 1336px;
+  background: url("../img/upcoming-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: 30%; }
+
+.upcoming_h2 {
+  color: #42717e;
+  margin-bottom: 170px; }
+
+.upcoming_tours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.upcoming_tour {
+  min-width: 550px;
+  width: 64%; }
+
+.upcoming_tour_h3,
+.upcoming_tour_h3:after,
+.upcoming_tour_text,
+.upcoming_tour_text:after,
+.upcoming_tour_date,
+.upcoming_tour:first-child .upcoming_tour_date:after {
+  position: relative; }
+
+.upcoming_tour_h3:after,
+.upcoming_tour_text:after,
+.upcoming_tour:first-child .upcoming_tour_date:after {
+  display: block;
+  content: ""; }
+
+.upcoming_tour_h3 {
+  font-size: 23px;
+  letter-spacing: 1px; }
+
+.upcoming_tour_h3:after {
+  height: 1px;
+  width: 132px;
+  background: #000;
+  margin: 5px 0 12px; }
+
+.upcoming_tour_text {
+  font-size: 15px;
+  color: #7a8083; }
+
+.upcoming_tour_text:after {
+  width: 1px;
+  height: 52px;
+  background: #000;
+  left: 35px;
+  margin: 20px 0; }
+
+.upcoming_tour_date {
+  font-size: 15px;
+  color: #7e7e7e;
+  font-weight: bold; }
+
+.upcoming_tour:first-child .upcoming_tour_date:after {
+  left: 35px;
+  width: 1px;
+  height: 165px;
+  background: #000;
+  margin: 20px 0; }
+
+.history:after {
+  top: 140px;
+  width: 41.85%; }
+
+.section_h2 {
+  z-index: 10; }
+
+.history_h2 {
+  color: #5b5c5a; }
+
+.history {
+  height: 1330px;
+  background: url("../img/history-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  overflow: hidden; }
+
+.history .container {
+  position: relative; }
+
+.history_list {
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
+  margin-top: 120px;
+  width: 200%; }
+
+.slick-current {
+  position: relative; }
+
+.slick-current:before,
+.slick-current:after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #5a5b59;
+  top: 27px; }
+
+.slick-current:before {
+  left: 85px; }
+
+.slick-current:after {
+  right: 85px; }
+
+.history_list_item {
+  text-align: center;
+  width: 222px; }
+
+.history_list_item_h3 {
+  font-family: 'Dosis', sans-serif;
+  font-size: 35.49px;
+  line-height: 59.27px;
+  color: #575a59;
+  position: relative;
+  z-index: 10; }
+
+.slick-current .history_list_item_h3:before,
+.slick-current .history_list_item_h3:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 147px;
+  height: 1px;
+  background: #afafaf;
+  top: 50%; }
+
+.slick-current .history_list_item_h3:before {
+  left: -95px; }
+
+.slick-current .history_list_item_h3:after {
+  right: -95px; }
+
+.history_list_item_text {
+  padding-top: 31px;
+  font-size: 14px;
+  line-height: 19.27px;
+  color: #5a5a58;
+  width: 222px;
+  margin: 0 auto; }
+
+.contact {
+  height: 1150px;
+  background: url("../img/footer-bg.jpg") no-repeat;
+  background-position: 15% 100%;
+  background-size: cover;
+  position: relative; }
+
+.contact .container {
+  width: 77.33%;
+  max-width: 866px;
+  position: absolute;
+  right: 1px;
+  margin: 0; }
+
+.contact .container:after {
+  width: 87%;
+  top: 140px;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  left: 5px; }
+
+.contact_h2 {
+  text-align: left;
+  color: #454545; }
+
+.contact_address {
+  color: #7a8083; }
+
+.contact_phone {
+  font-size: 14px;
+  line-height: 50px;
+  color: #7b7b7b; }
+
+.contact_form-socials {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.contact_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 66%; }
+
+.contact_form_input {
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 42px;
+  color: #7b7b7b; }
+
+.contact_form_input:nth-child(3) {
+  margin-bottom: 30px; }
+
+.contact_form_btn {
+  font-size: 20px;
+  color: #000; }
+
+.contact_socials {
+  width: 13%;
+  border-left: 1px solid #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0; }
+
+.contact_socials_link {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background: url("../img/social_icons.png"); }
+
+.contact_socials_link:nth-child(2) {
+  background-position: 0 52%; }
+
+.contact_socials_link:nth-child(3) {
+  background-position: 0 100%; }
+
+@media screen and (min-width: 1537px) {
+  header {
+    background: url("../img/header-bg_desktop.jpg") no-repeat;
+    background-position: 50%; }
+  header .container {
+    height: 1062px; }
+  .header-nav_menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(229, 230, 230, 0.5); }
+  .swap-menu {
+    display: none; }
+  .header-nav_menu_li {
+    background: transparent;
+    text-align: center;
+    padding-right: 43px;
+    border: none; }
+  .header-nav_menu_li:last-child {
+    border-bottom: none; }
+  .header-nav_menu_a {
+    font-family: Dosis, sans-serif;
+    font-size: 20px;
+    color: #606060; }
+  .header-nav_menu_a:hover {
+    border-bottom: 2px solid #000; }
+  .header-logo {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    display: block;
+    width: 428px;
+    height: 397px; }
+  .discography {
+    background: url("../img/discography-bg_desktop.jpg") no-repeat;
+    background-position: 50% 100%;
+    height: 2000px; }
+  .discography_btn {
+    margin: 44px 0 50px; }
+  .discography_list {
+    margin-top: 100px; }
+  .discography_list_album {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 82%;
+    margin: 0 auto; }
+  .discography_list_album_header {
+    width: 41%; }
+  .discography_list_album_body {
+    width: 55%; }
+  .history_list {
+    width: 150%; }
+  .tours {
+    background-size: contain;
+    background: url("../img/tours-bg_desktop.jpg") no-repeat;
+    background-position: 50% 100%; }
+  .upcoming {
+    /*        background-size: cover;*/
+    background: url("../img/upcoming-bg_desktop.jpg") no-repeat;
+    background-position: 0 100%;
+    height: 1200px; }
+  .upcoming_tour {
+    width: 50%; }
+  .tours_list {
+    width: 700px;
+    position: absolute;
+    left: 20%;
+    bottom: 14%;
+    height: 400px; }
+  .tours_list_header {
+    width: 60%; }
+  .compositions_list {
+    margin: 100px auto 110px;
+    max-width: 1200px; }
+  .compositions_list_li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .compositions_list_li:nth-child(2n) .compositions_list_li_container {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; }
+  .compositions_list_li_container {
+    width: 50%; }
+  .compositions_list_div-video {
+    width: 50%; }
+  .compositions_list_li_container:after {
+    top: 50%;
+    left: 99.1%;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  .compositions_list_li:nth-child(2) .compositions_list_li_container::after {
+    left: -17px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  .section_description {
+    width: 830px;
+    margin: 0 auto; }
+  .slick-current:before {
+    left: 185px; }
+  .slick-current:after {
+    right: 185px; }
+  .slick-current .history_list_item_h3:before,
+  .slick-current .history_list_item_h3:after {
+    width: 247px; }
+  .numbers_header .container {
+    width: 59%; }
+  .numbers_header_btn_left,
+  .numbers_header_btn_right {
+    position: absolute;
+    display: block;
+    top: 234.5px; }
+  .numbers_header_btn_left {
+    left: 0; }
+  .numbers_header_btn_right {
+    right: 0;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1); }
+  .numbers_header_btn_left:after,
+  .numbers_header_btn_right:after {
+    width: 11px;
+    height: 22px;
+    content: "";
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    top: 50%;
+    left: 40%;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIyMiIgdmlld0JveD0iMCAwIDExIDIyIj4gIDxtZXRhZGF0YT48P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/Pjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQwIDc5LjE2MDQ1MSwgMjAxNy8wNS8wNi0wMTowODoyMSAgICAgICAgIj4gICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiLz4gICA8L3JkZjpSREY+PC94OnhtcG1ldGE+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSJ3Ij8+PC9tZXRhZGF0YT48ZGVmcz4gICAgPHN0eWxlPiAgICAgIC5jbHMtMSB7ICAgICAgICBmaWxsLXJ1bGU6IGV2ZW5vZGQ7ICAgICAgfSAgICA8L3N0eWxlPiAgPC9kZWZzPiAgPHBhdGggaWQ9IkJ1dHRvbl9pY29uX9C60L7Qv9C40Y9fMiIgZGF0YS1uYW1lPSJCdXR0b24gaWNvbiDQutC+0L/QuNGPIDIiIGNsYXNzPSJjbHMtMSIgZD0iTTQwLjEwOCw2NjQzTDQyLDY2NDAuNzMsMzQuNzM2LDY2MzIsNDIsNjYyMy4yNyw0MC4xMDgsNjYyMSwzMSw2NjMyaDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzEgLTY2MjEpIi8+PC9zdmc+"); }
+  .numbers_list_ul {
+    margin-top: 110px; }
+  .contact .container {
+    right: 10%;
+    top: 10%; } }
