@@ -219,3 +219,45 @@ body {
   font-weight: 300;
   width: 80%;
   text-align: center; }
+
+.about-top {
+  padding: 43px 0 30px; }
+
+.about-top__h2,
+.about-top__text {
+  font-size: 24px;
+  color: #283645;
+  font-weight: 300;
+  text-align: center; }
+
+.about-top__h2 {
+  padding-bottom: 30px; }
+
+.about-main {
+  height: 790px;
+  background-color: #f2f2f2;
+  background-image: url("../img/about-main_phone.png");
+  background-repeat: no-repeat;
+  background-position: 50% 115%;
+  position: relative;
+  padding-top: 80px; }
+
+.about-main__svg-bg {
+  position: absolute;
+  top: 0; }
+
+.about-main__ul {
+  text-align: center; }
+
+.about-main__li__h3 {
+  font-weight: 18px;
+  line-height: 24px;
+  font-weight: bold; }
+
+.about-main__li__text {
+  font-weight: 14px;
+  line-height: 24px;
+  color: #283645;
+  padding: 15px 0 38px;
+  width: 70%;
+  margin: 0 auto; }
