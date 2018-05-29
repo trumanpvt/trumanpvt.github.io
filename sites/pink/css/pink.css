@@ -305,6 +305,13 @@ body {
   -webkit-box-shadow: 0 0 0 3px #283645;
           box-shadow: 0 0 0 3px #283645; }
 
+.price-slider__radio:first-of-type:checked ~ .price-slider__label:first-of-type,
+.price-slider__radio:nth-of-type(2):checked ~ .price-slider__label:nth-of-type(2),
+.price-slider__radio:last-of-type:checked ~ .price-slider__label:last-of-type {
+  background: none;
+  -webkit-box-shadow: 0 0 0 3px #283645;
+          box-shadow: 0 0 0 3px #283645; }
+
 .price {
   height: 470px;
   background: #f2f2f2;
@@ -333,11 +340,6 @@ body {
 .reviews-slider__label:last-of-type,
 .price-slider__label:last-of-type {
   left: 57%; }
-
-#price-slider-1:checked ~ .price-slider__label:first-child {
-  background: none;
-  -webkit-box-shadow: 0 0 0 3px #283645;
-          box-shadow: 0 0 0 3px #283645; }
 
 #price-slider-1:checked ~ .price-table {
   -webkit-transform: translateX(-25%);
