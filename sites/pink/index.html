@@ -14,7 +14,7 @@
     <header>
         <div class="header-top">
             <div class="header-top__menu" id="header-top__menu">
-                <a href="#" class="header-top__logo">PINK</a>
+                <a href="#" class="header-top__logo"><span class="header-top__logo__icon"></span>PINK</a>
                 <nav class="header-top__nav">
                     <a href="" class="header-top__swap-menu">
                         <div class="header-top__swap-menu__line"></div>
@@ -67,7 +67,7 @@
                 </div>
             </div>
             <div class="about-main">
-                <svg class="about-main__svg-bg" viewBox="0 0 320 32">
+                <svg class="about-main__svg-bg" preserveAspectRatio="none" viewBox="0 0 320 32">
                     <polygon fill="#FFFFFF" points="0,0 320,0 0,32" />
                 </svg>
                 <div class="container">
@@ -86,12 +86,26 @@
                         </li>
                     </ul>
                 </div>
+                <div class="about-main__phone"></div>
+            </div>
+            <div class="about-bottom">
+                <div class="container">
+                    <div class="about-bottom__clock">
+                        <div class="about-bottom__clock__24">24</div>
+                    </div>
+                    <div class="about-bottom__main">
+                        <h2 class="about-bottom__h2">Эффект на 24 часа!</h2>
+                        <p class="about-bottom__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+                        <a href="#" class="about-bottom__link">Узнать больше об исследовании</a>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="reviews">
             <div class="container">
                 <div class="reviews-slide">
                     <h2 class="reviews-slide__h2">Николай Петров</h2>
+                    <p class="reviews-slide__name">25 лет, водитель трамвая</p>
                     <p class="reviews-slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </div>
                 <form class="reviews-slider">
@@ -105,7 +119,7 @@
             </div>
         </section>
         <section class="price">
-            <svg class="price-svg-bg" viewBox="0 0 320 25">
+            <svg class="price-svg-bg" preserveAspectRatio="none" viewBox="0 0 320 25">
                 <polygon fill="#FFFFFF" points="0,0 320,0 0,25" />
             </svg>
             <input type="radio" name="price-slider" id="price-slider-1" class="price-slider__radio">
@@ -183,14 +197,25 @@
                         </li>
                     </ul>
                 </div>
-                <svg class="contact-main__svg-bg" viewBox="0 0 320 35">
+            </div>
+            <div class="contact-map">
+                <svg class="contact-map__svg-bg" preserveAspectRatio="none" viewBox="0 0 320 35">
                     <polygon fill="#FFFFFF" points="0,0 320,0 160,35" />
                 </svg>
+                <iframe class="contact-map__iframe" src="https://yandex.ru/map-widget/v1/-/CBqPUNQTcA"></iframe>
             </div>
-            <iframe class="contact-map" src="https://yandex.ru/map-widget/v1/-/CBqPUNQTcA"></iframe>
         </section>
     </main>
     <footer>
+        <div class="container">
+            <a href="#" class="footer-logo"><span class="footer-logo__icon"></span>PINK</a>
+            <div class="footer-socials">
+                <a href="#" class="footer-socials__link"></a>
+                <a href="#" class="footer-socials__link"></a>
+                <a href="#" class="footer-socials__link"></a>
+            </div>
+            <div class="footer-copyright">Website by<a href="#" class="footer-copyright__link"></a>for<a href="#" class="footer-copyright__link"></a></div>
+        </div>
     </footer>
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/sstu_script.js"></script>
