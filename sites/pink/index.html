@@ -73,14 +73,17 @@
                 <div class="container">
                     <ul class="about-main__ul">
                         <li class="about-main__li">
+                            <div class="about-main__li__phone"></div>
                             <h3 class="about-main__li__h3">Поднимает настроение</h3>
                             <p class="about-main__li__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                         </li>
                         <li class="about-main__li">
+                            <div class="about-main__li__phone"></div>
                             <h3 class="about-main__li__h3">Меняет мир вокруг</h3>
                             <p class="about-main__li__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                         </li>
                         <li class="about-main__li">
+                            <div class="about-main__li__phone"></div>
                             <h3 class="about-main__li__h3">Заводит новых друзей</h3>
                             <p class="about-main__li__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
                         </li>
@@ -103,7 +106,10 @@
         </section>
         <section class="reviews">
             <div class="container">
+                <button class="reviews__btn-left" onclick="buttonLeft()"></button>
+                <button class="reviews__btn-right" onclick="buttonRight()"></button>
                 <div class="reviews-slide">
+                    <p class="reviews-slide__quotes">“</p>
                     <h2 class="reviews-slide__h2">Николай Петров</h2>
                     <p class="reviews-slide__name">25 лет, водитель трамвая</p>
                     <p class="reviews-slide__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -220,6 +226,33 @@
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/sstu_script.js"></script>
     <script>
+    function buttonLeft() {
+        for (var a, b = 1; b <= 3; b++) {
+            var c = "reviews-slider-" + b;
+            document.getElementById(c).checked && (a = b - 1)
+        }
+        if (a > 0) {
+            var c = "reviews-slider-" + a;
+            document.getElementById(c).checked = !0
+        } else {
+            var c = "reviews-slider-3";
+            document.getElementById(c).checked = !0
+        }
+    }
+
+    function buttonRight() {
+        for (var a, b = 1; b < 3; b++) {
+            var c = "reviews-slider-" + b;
+            document.getElementById(c).checked && (a = b + 1)
+        }
+        if (a <= 3) {
+            var c = "reviews-slider-" + a;
+            document.getElementById(c).checked = !0
+        } else {
+            var c = "reviews-slider-1";
+            document.getElementById(c).checked = !0
+        }
+    }
     </script>
 </body>
 
