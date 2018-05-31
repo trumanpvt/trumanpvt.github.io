@@ -520,6 +520,8 @@ footer .container {
   display: none; }
 
 @media screen and (min-width: 700px) {
+  header {
+    position: relative; }
   .header-top {
     height: 728px;
     background: url("../img/header-bg_700.jpg") no-repeat;
@@ -579,8 +581,7 @@ footer .container {
   .header-bottom {
     position: absolute;
     background: transparent;
-    /*top: 32%;*/
-    bottom: 45%;
+    bottom: 10%;
     width: 300px;
     left: 6%; }
   .about-top {
