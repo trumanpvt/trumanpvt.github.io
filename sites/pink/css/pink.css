@@ -579,7 +579,8 @@ footer .container {
   .header-bottom {
     position: absolute;
     background: transparent;
-    top: 32%;
+    /*top: 32%;*/
+    bottom: 45%;
     width: 300px;
     left: 6%; }
   .about-top {
