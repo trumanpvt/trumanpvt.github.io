@@ -23,7 +23,7 @@ body {
 
 .container {
   width: 87.5%;
-  /*max-width: 1440px;*/
+  max-width: 940px;
   margin: 0 auto; }
 
 .header-top__menu {
@@ -65,6 +65,16 @@ body {
   height: 24px;
   margin: 30% 0;
   position: relative; }
+
+.header-top__swap-menu:hover .header-top__swap-menu__line,
+.header-top__swap-menu-opened:hover .header-top__swap-menu__line-opened-1,
+.header-top__swap-menu-opened:hover .header-top__swap-menu__line-opened-2 {
+  background: #d22856; }
+
+.header-top__swap-menu:active .header-top__swap-menu__line,
+.header-top__swap-menu-opened:active .header-top__swap-menu__line-opened-1,
+.header-top__swap-menu-opened:active .header-top__swap-menu__line-opened-2 {
+  background: rgba(210, 40, 86, 0.3); }
 
 .header-top__swap-menu__line {
   width: 100%;
@@ -124,6 +134,12 @@ body {
   color: #fff;
   font-weight: bold;
   text-transform: uppercase; }
+
+.header-top__link:hover {
+  color: #d22856; }
+
+.header-top__link:active {
+  color: rgba(210, 40, 86, 0.3); }
 
 .header-top__main {
   position: relative;
@@ -193,6 +209,13 @@ body {
   font-size: 18px;
   color: #fff;
   font-weight: bold; }
+
+.header-bottom__btn:hover {
+  background: #fff;
+  color: #d22856; }
+
+.header-bottom__btn:active {
+  color: rgba(210, 40, 86, 0.3); }
 
 .header-bottom__os {
   display: -webkit-box;
@@ -315,6 +338,14 @@ body {
   height: 6px;
   background: #bec2c7;
   border-radius: 50%; }
+
+.reviews-slider__label:hover,
+.price-slider__label:hover {
+  background: #7e868f; }
+
+.reviews-slider__label:active,
+.price-slider__label:active {
+  background: #e9ebec; }
 
 .reviews-slider__radio:first-of-type:checked ~ .reviews-slider__label:first-of-type,
 .reviews-slider__radio:nth-of-type(2):checked ~ .reviews-slider__label:nth-of-type(2),
@@ -505,6 +536,16 @@ body {
   color: #d22856;
   font-weight: 300; }
 
+.about-bottom__link:hover,
+.contact-main__link:hover {
+  color: #283645;
+  text-decoration: underline; }
+
+.about-bottom__link:active,
+.contact-main__link:active {
+  color: rgba(40, 54, 69, 0.3);
+  text-decoration: none; }
+
 .contact-map {
   height: 200px;
   position: relative; }
@@ -543,6 +584,9 @@ footer .container {
     display: flex;
     width: 150px;
     font-size: 32px; }
+  .header-top__logo:active,
+  .footer-logo:active {
+    opacity: 0.3; }
   .header-top__logo__icon,
   .footer-logo__icon {
     position: relative;
@@ -829,6 +873,11 @@ footer .container {
     background-position: 50% 50%; }
   .footer-socials__link:last-child {
     background-position: -112px 50%; }
+  .footer-socials__link:hover {
+    border: 3px solid #283645; }
+  .footer-socials__link:active {
+    opacity: 0.3;
+    border: 3px solid rgba(50, 50, 50, 0.3); }
   .footer-copyright {
     font-size: 14px;
     line-height: 18px;
@@ -848,6 +897,10 @@ footer .container {
     height: 33px;
     width: 27px;
     background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAAAhCAMAAADznkW6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEX////SKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFbSKFb///9DKmVIAAAAEXRSTlMAAEBwgBC/r8/fn1AwYO+PIMlazHsAAAABYktHRACIBR1IAAAAB3RJTUUH4gUeFi0o4kqSIgAAAYlJREFUSMft1tuSgyAMBmASQ5RDQN7/ZZfD1lp7mFnBXi0XdtQpn4QfRanxDQBxIiJEDaXVi5zeNfwzgEg087LvxPBME+JYJz0KuxO6ziFo9bNsLnday8a/0+1Y58WDpzEOC7x2EIDrUfqdYD3Aa4fzObXBmk7HiAZ45xgNmpvDXY5FBfDeSaEsp+C6nUU+O3lIEV2/kx92/eRwzpoZULdSumAbgMbIwZlbAIY4hpBYtJ0FZz44JYhpkIO2JNsLZ3E9OCWKIaVphJPM5G3I+c7gcTyljkhTyYH0Os5xCtHN+eDdwamJRq7eunTOTw53icEaQ4pPuQ4cdj89DuMt0VqenYHva3af1uk4pyRBf8X5TdZXv3OaRu9D+JUjoaR5f28RjKHHUWiODpY1YvX9GUxsr9m8vM47Sk1h76ylM/bbWIPFezy0nF2npem4OWViknHb/noWeMy7WqM56+Q/txJRnRi67ePjdPwsteto/UlHQZ2mUCdm6++Clruu08R+99zXOKCjkX19fgAY2kZAuS4kZQAAAABJRU5ErkJggg=="); }
+  .footer-copyright__link:hover {
+    background: url("data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAAAhCAMAAADznkW6AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAOVBMVEX///8oNkUoNkUoNkUoNkUoNkUoNkUoNkUoNkUoNkUoNkUoNkUoNkUoNkUoNkUoNkUoNkUoNkUAAADLfUOMAAAAEXRSTlMAAEBwgFAQv6/fn88wYO+PIAxBkd8AAAABYktHRBJ7vGwAAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4gUfFgEuiqQ73AAAAZdJREFUSMftlt2SwiAMhSENhFB+yvu/7Cat1tpVZ1bo3eZCK87kg5NDUmNGh5UAmBDRgZfn2zK1dwF/RgAgBuJjEqaACOCHctoz4fADr+PgTb9I8+Ucu9WH/jn9nOhSTjbhGA5l+5oD1tL6mfs5JSZrX3NIVnA9rOFODmdv7TsOe+tp41AXJ4J9jpNuRftFcd2cOX/myJEquH6ObHb5xCHxGg/QTaUr8cZYMJw4QVZ5RH1UGARUX0NoBU8cNWIbxIGozs7ceEr5xFErltamERzNH0sLkEnuyzNHXQI4qQ9yL8c5aqUmZDHfcuKooy1Q03Muc2d9JL9o10S7mX75ulA5fPVwCPIsZki1yOO1/Zqcmq0uV88F5r3NXcoR/fO7vjOW85hzHke/h9ArTi7q5uN/4sZaejgG+MwBvSPRP/bAdWuzLnRwjJnKkbNoMkr7WcthOhmfv72nGr7uHC1MY7drGvJpXpil8rccY5dNIsw6OPH+Hl+n57F0X4eYvuRIUbRMZS3Mnm94rJtdy0Rw2Pc1HOsr56M+P2ClRwq5l7n4AAAAAElFTkSuQmCC"); }
+  .footer-copyright__link:active {
+    opacity: 0.3; }
   .footer-copyright__link:last-child {
     background-position: 100% 0; } }
 
@@ -894,15 +947,23 @@ footer .container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 50.42%; }
+    width: 602px; }
   .header-top__li {
     background: transparent;
     border: none;
-    width: auto; }
+    width: auto;
+    height: 31px;
+    border-bottom: 2px solid transparent; }
   .header-top__link {
     line-height: 18px;
     text-transform: none;
     font-weight: normal; }
+  .header-top__li:hover {
+    border-bottom: 2px solid #fff; }
+  .header-top__link:active,
+  .header-top__li:active {
+    border-bottom: 2px solid transparent;
+    opacity: 0.3; }
   .header-top__main__h2 {
     font-size: 50px;
     margin: 0;
@@ -945,6 +1006,8 @@ footer .container {
   .about-top__h2,
   .about-top__text {
     font-size: 50px; }
+  .about-top__h2 {
+    line-height: 60px; }
   .about-main {
     height: 556px;
     padding: 0; }
@@ -1068,7 +1131,7 @@ footer .container {
     height: 530px;
     padding-top: 153px; }
   .price-table {
-    width: 78.33%; }
+    width: 940px; }
   .price-table__th {
     height: 98px; }
   .price-table__td {
@@ -1122,3 +1185,28 @@ footer .container {
   .footer-copyright {
     width: 210px;
     font-size: 18px; } }
+
+@media screen and (min-width: 1440px) {
+  .header-top {
+    background: url("../img/header-bg_1440.jpg") no-repeat;
+    background-size: cover; }
+  .header-top__menu {
+    padding: 0 17.5%; }
+  .header-top__ul {
+    right: 17.5%; }
+  .header-top__main__phone {
+    right: 13%; }
+  .header-top__main__h2,
+  .header-bottom {
+    left: 17.5%; }
+  .header-top__main__h2 {
+    top: 116px;
+    line-height: 60px; }
+  .header-bottom {
+    bottom: 116px; }
+  .about-main__li {
+    width: 254px; }
+  .about-main__li__text {
+    min-width: unset; }
+  .about-bottom__text {
+    width: 100%; } }
