@@ -959,7 +959,10 @@ footer .container {
     text-transform: none;
     font-weight: normal; }
   .header-top__li:hover {
+    color: #fff;
     border-bottom: 2px solid #fff; }
+  .header-top__link:hover {
+    color: #fff; }
   .header-top__link:active,
   .header-top__li:active {
     border-bottom: 2px solid transparent;
