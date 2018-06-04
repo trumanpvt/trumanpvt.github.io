@@ -732,8 +732,7 @@ footer .container {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 21px;
-    /*width: 100%;*/ }
+    padding-top: 21px; }
   .header-main_logo {
     height: 23px;
     color: #000000;
@@ -1894,9 +1893,5 @@ footer .container {
   width: auto; }
 .promo_right_bottom_left_logo {
   white-space: pre-wrap; }
-.header-main {
-  position: relative;
-}
-.header-main_cart {
-  left: 35%;
-  position: relative; } }
+.header-main {  }
+.header-main_cart { } }
