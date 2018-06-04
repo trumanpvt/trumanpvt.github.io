@@ -653,7 +653,8 @@ footer .container {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 21px; }
+    padding-top: 21px;
+    /*width: 100%;*/ }
   .header-main_logo {
     height: 23px;
     color: #000000;
@@ -1535,6 +1536,9 @@ footer .container {
   .links_logo:after {
     content: "";
     position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
     border-radius: 50%; }
   .links_logo:before {
     width: 92px;
