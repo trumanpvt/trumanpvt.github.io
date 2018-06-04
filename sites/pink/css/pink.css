@@ -619,7 +619,8 @@ footer .container {
     height: 545px;
     bottom: -12%;
     position: relative;
-    left: unset;
+    /*left: unset;*/
+    left: auto;
     right: 6%;
     width: 480px; }
   .header-top__main__phone:hover:after {
@@ -769,6 +770,8 @@ footer .container {
     position: relative;
     -webkit-transform: unset;
             transform: unset;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     margin: 0 auto; }
   .price-slider__label {
     display: none; }
@@ -933,7 +936,8 @@ footer .container {
     display: block; }
   .header-top__ul {
     top: 0;
-    left: unset;
+    /*left: unset;*/
+    left: auto;
     right: 10.83%;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -993,13 +997,15 @@ footer .container {
     height: 645px;
     bottom: -15.3%;
     position: relative;
-    left: unset;
+    /*left: unset;*/
+    left: auto;
     right: 6%;
     width: 700px; }
   .header-top__main__phone:hover:after {
     width: 230px;
     height: 408px;
-    left: unset;
+    /*left: unset;*/
+    left: auto;
     right: 64.4px;
     top: 41.6%;
     background: url("../img/header-main_layer_1200.png"); }
@@ -1022,7 +1028,8 @@ footer .container {
     height: 95px; }
   .about-main__ul {
     width: 100%;
-    left: unset;
+    /*left: unset;*/
+    left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
