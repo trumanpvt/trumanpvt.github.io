@@ -767,8 +767,8 @@ footer .container {
   .price-table {
     width: 87.5%;
     position: relative;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: unset;
+            transform: unset;
     margin: 0 auto; }
   .price-slider__label {
     display: none; }

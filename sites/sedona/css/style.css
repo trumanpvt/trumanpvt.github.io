@@ -175,16 +175,30 @@ body {
   height: 1px;
   background-color: #d6d6d6; }
 
-.main-content_list_li_img {
+.main-content_list_li_img,
+.main-content_list_li_img:after {
   width: 100%;
   height: auto;
   display: block; }
 
+.main-content_list_li_img:after {
+  content: "";
+  height: 256px;
+  max-height: 613px;
+  padding: 40% 0;
+  background-size: cover; }
+
 .main-content_list_li:first-child .main-content_list_li_img {
   content: url("../img/main-content_list_1.jpg"); }
 
+.main-content_list_li:first-child .main-content_list_li_img:after {
+  background-image: url("../img/main-content_list_1.jpg"); }
+
 .main-content_list_li:nth-child(2) .main-content_list_li_img {
   content: url("../img/main-content_list_2.jpg"); }
+
+.main-content_list_li:nth-child(2) .main-content_list_li_img:after {
+  background-image: url("../img/main-content_list_2.jpg"); }
 
 .main-content_list_li_header_h2 {
   font-size: 18px;
@@ -511,12 +525,22 @@ footer .container {
     -webkit-box-ordinal-group: 0;
     -ms-flex-order: -1;
     order: -1; }
+  .main-content_list_li_img:after {
+    padding: 0; }
+  .main-content_list_li:first-child .main-content_list_li_img:after {
+    background-image: url("../img/main-content_list_1_768.jpg"); }
+  .main-content_list_li:nth-child(2) .main-content_list_li_img:after {
+    background-image: url("../img/main-content_list_2_768.jpg"); }
   .main-content_list_li:nth-child(3),
   .main-content_list_li:nth-child(4),
   .main-content_list_li:nth-child(5) {
     width: 33.33%;
     height: 256px;
     padding: 50px; }
+    .main-content_list_li:nth-child(3) .main-content_list_li_header,
+  .main-content_list_li:nth-child(4) .main-content_list_li_header,
+  .main-content_list_li:nth-child(5) .main-content_list_li_header {
+    padding: 0; }
   .main-content_list_li:nth-child(3) .main-content_list_li_header:before,
   .main-content_list_li:nth-child(4) .main-content_list_li_header:before {
     display: none; }
@@ -630,4 +654,8 @@ footer .container {
   .main-content_list_li:first-child .main-content_list_li_img {
     content: url("../img/main-content_list_1_1280.jpg"); }
   .main-content_list_li:nth-child(2) .main-content_list_li_img {
-    content: url("../img/main-content_list_2_1280.jpg"); } }
+    content: url("../img/main-content_list_2_1280.jpg"); }
+  .main-content_list_li:first-child .main-content_list_li_img:after {
+    background-image: url("../img/main-content_list_1_1280.jpg"); }
+  .main-content_list_li:nth-child(2) .main-content_list_li_img:after {
+    background-image: url("../img/main-content_list_2_1280.jpg"); } }
