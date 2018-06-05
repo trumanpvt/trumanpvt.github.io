@@ -1,18 +1,43 @@
 @font-face {
-    font-family: Bebas Neue;
-    src: url("../font/BebasNeue Regular.ttf");
-    src: url("../font/BebasNeue Book.ttf");
+    font-family: 'Bebas Neue';
+    src: url('../font/BebasNeueRegular.eot');
+    src: url('../font/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
+        url('../font/BebasNeueRegular.woff') format('woff'),
+        url('../font/BebasNeueRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: Bold;
-    src: url("../font/NexaBold.otf");
+    font-family: 'Bebas Neue Book';
+    src: url('../font/BebasNeueBook.eot');
+    src: url('../font/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
+        url('../font/BebasNeueBook.woff') format('woff'),
+        url('../font/BebasNeueBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-    font-family: NexaLight;
-    src: url("../font/NexaLight.otf");
+    font-family: 'Nexa';
+    src: url('../font/NexaBold.eot');
+    src: url('../font/NexaBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/NexaBold.woff') format('woff'),
+        url('../font/NexaBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('../font/NexaLight.eot');
+    src: url('../font/NexaLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/NexaLight.woff') format('woff'),
+        url('../font/NexaLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
 
 @font-face {
     font-family: 'Proxima Nova Rg';
@@ -95,7 +120,7 @@ body {
 .brandly-first {
     color: rgba(220, 0, 0, 0.8);
     font-size: 48px;
-    font-weight: bold;
+    font-family: "BebasNeueBook";
 }
 
 .brandly-last {
@@ -106,13 +131,15 @@ body {
 
 .jwood {
     background-image: url("../img/j-wood.jpg");
-    font-family: "NexaLight", sans-serif;
+    font-family: "Nexa";
+    font-weight: 300;
     color: #ffffff;
     font-size: 30px;
 }
 
 .jwood_bold {
-    font-family: "NexaBold", sans-serif;
+    font-family: "Nexa";
+    font-weight: bold;
 }
 
 .magmagazine {
