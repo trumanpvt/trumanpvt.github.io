@@ -1195,7 +1195,6 @@ footer .container {
   .promo_right_bottom_right_img:after {
     background-image: url("../img/promo_img_4.jpg");
     content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPEAAACoCAQAAACbQ8C9AAABD0lEQVR42u3RAQ0AAAzCsOPf9HVAOglrTuPFAsRCLMRCLMRCLMSIhViIhViIhViIhRixEAuxEAuxEAuxECMWYiEWYiEWYiEWYsRCLMRCLMRCLMRCjFiIhViIhViIhRixEAuxEAuxEAuxECMWYiEWYiEWYiEWYsRCLMRCLMRCLMRCjFiIhViIhViIhViIEQuxEAuxEAuxECO2ALEQC7EQC7EQCzFiIRZiIRZiIRZiIUYsxEIsxEIsxEIsxIiFWIiFWIiFWIiFGLEQC7EQC7EQC7EQIxZiIRZiIRZiIUYsxEIsxEIsxEIsxIiFWIiFWIiFWIiFGLEQC7EQC7EQC7EQIxZiIRZiIRZiIRZixEKshh7i+wCpBQEKuQAAAABJRU5ErkJggg==); }
- }
   .promo_right_bottom_right_logo {
     top: 50%;
     left: 8%;
