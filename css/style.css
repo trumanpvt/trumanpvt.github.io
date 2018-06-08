@@ -2,8 +2,8 @@
     font-family: 'Bebas Neue';
     src: url('../font/BebasNeueRegular.eot');
     src: url('../font/BebasNeueRegular.eot?#iefix') format('embedded-opentype'),
-        url('../font/BebasNeueRegular.woff') format('woff'),
-        url('../font/BebasNeueRegular.ttf') format('truetype');
+    url('../font/BebasNeueRegular.woff') format('woff'),
+    url('../font/BebasNeueRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -12,8 +12,8 @@
     font-family: 'Bebas Neue Book';
     src: url('../font/BebasNeueBook.eot');
     src: url('../font/BebasNeueBook.eot?#iefix') format('embedded-opentype'),
-        url('../font/BebasNeueBook.woff') format('woff'),
-        url('../font/BebasNeueBook.ttf') format('truetype');
+    url('../font/BebasNeueBook.woff') format('woff'),
+    url('../font/BebasNeueBook.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -22,8 +22,8 @@
     font-family: 'Nexa';
     src: url('../font/NexaBold.eot');
     src: url('../font/NexaBold.eot?#iefix') format('embedded-opentype'),
-        url('../font/NexaBold.woff') format('woff'),
-        url('../font/NexaBold.ttf') format('truetype');
+    url('../font/NexaBold.woff') format('woff'),
+    url('../font/NexaBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
@@ -32,8 +32,8 @@
     font-family: 'Nexa';
     src: url('../font/NexaLight.eot');
     src: url('../font/NexaLight.eot?#iefix') format('embedded-opentype'),
-        url('../font/NexaLight.woff') format('woff'),
-        url('../font/NexaLight.ttf') format('truetype');
+    url('../font/NexaLight.woff') format('woff'),
+    url('../font/NexaLight.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -75,7 +75,8 @@ body {
 }
 
 .sites .container {
-    width: 900px;
+    min-width: 320px;
+    max-width: 670px;
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
@@ -85,13 +86,14 @@ body {
 }
 
 .sites_div {
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     background-size: cover;
+    position: relative;
 }
 
 .sites_div:hover {
@@ -134,7 +136,7 @@ body {
     font-family: "Nexa";
     font-weight: 300;
     color: #ffffff;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .jwood_bold {
@@ -210,4 +212,8 @@ body {
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: 50% 45%;
+}
+
+@media (max-width: 900px) {
+    .sites .container {}
 }
