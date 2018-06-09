@@ -13,14 +13,19 @@
 </head>
 
 <body>
-	 <div id="root"></div>
+    <div id="root" class="test"></div>
+    <div id="root2"></div>
     <script type="text/babel">
-
-      ReactDOM.render(
-        <h1>Hello, world!</h1>,
-        document.getElementById('root')
-      );
-
+        ReactDOM.render(
+        <div id="items">
+            <h2>Список телефонов</h2>
+            <ul>
+                <li>iPhone 7</li>
+                <li>Samsung Galaxy A5</li>
+                <li>HTC U Ultra</li>
+                <li>Pixel XL</li>
+            </ul>
+        </div>, document.getElementById('root'))
     </script>
     <!-- <script src="js/script.js"></script> -->
 </body>
