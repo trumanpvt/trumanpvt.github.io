@@ -453,7 +453,7 @@ body {
   background-color: #fd926d; }
 
 .hot_header {
-  background-color: #f4845d;
+  background: #f4845d;
   height: 88px;
   font-size: 30px;
   position: relative; }
@@ -462,7 +462,8 @@ body {
   width: 100%;
   height: 100%;
   padding: 0 30px;
-  color: #ffffff; }
+  color: #ffffff;
+  background: #f4845d; }
 
 .hot_header_menu {
   display: none; }
