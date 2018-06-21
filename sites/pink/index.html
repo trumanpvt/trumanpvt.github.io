@@ -134,7 +134,7 @@
             <label for="price-slider-1" class="price-slider__label"></label>
             <label for="price-slider-2" class="price-slider__label"></label>
             <label for="price-slider-3" class="price-slider__label"></label>
-            <table class="price-table">
+            <table class="price-table" id="price-table">
                 <tr class="price-table__tr">
                     <th class="price-table__th"></th>
                     <th class="price-table__th">
@@ -225,6 +225,31 @@
     </footer>
     <script src="js/jquery-2.0.3.min.js"></script>
     <script src="js/sstu_script.js"></script>
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+    <script>
+    if ($(window).width() < 700) {
+        $(".price-table").swipe({
+            swipeLeft: leftSwipe,
+            swipeRight: rightSwipe,
+            threshold: 0
+        });
+        function leftSwipe(event) {
+            if (document.getElementById('price-slider-1').checked) {
+                document.getElementById('price-slider-2').checked = true;
+            } else if (document.getElementById('price-slider-2').checked) {
+                document.getElementById('price-slider-3').checked = true;
+            }
+        }
+
+        function rightSwipe(event) {
+            if (document.getElementById('price-slider-3').checked) {
+                document.getElementById('price-slider-2').checked = true;
+            } else if (document.getElementById('price-slider-2').checked) {
+                document.getElementById('price-slider-1').checked = true;
+            }
+        }
+    }
+    </script>
     <script>
     function buttonLeft() {
         for (var a, b = 1; b <= 3; b++) {
@@ -239,7 +264,6 @@
             document.getElementById(c).checked = !0
         }
     }
-
     function buttonRight() {
         for (var a, b = 1; b < 3; b++) {
             var c = "reviews-slider-" + b;
