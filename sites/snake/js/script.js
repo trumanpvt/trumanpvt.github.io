@@ -1,32 +1,9 @@
 'use strict';
 
-// var snake = {
-//     top: 140,
-//     left: 158,
-//     goleft: function() {
-
-//         return this;
-//     },
-//     goRight: function() {
-
-//         return this;
-//     },
-//     goTop: function() {
-
-//         return this;
-//     },
-//     goBottom: function() {
-
-//         return this;
-//     }
-// };
-
 var leftCoord = 158;
 var topCoord = 140;
 
 function moveSnake(e) {
-
-    // var blueRect = document.getElementById("blueRect");
 
     var snake = document.getElementById("snake");
     // получаем стиль для blueRect
