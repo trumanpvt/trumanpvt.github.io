@@ -74,7 +74,8 @@ body {
     background-color: #f1f1f1;
 }
 
-.sites .container {
+.sites .container,
+.misc .container {
     min-width: 320px;
     max-width: 1100px;
     margin: 0 auto;
@@ -85,14 +86,16 @@ body {
     flex-wrap: wrap;
 }
 
-.sites_h2 {
+.sites_h2,
+.misc_h2 {
     width: 100%;
     margin-bottom: 40px;
     text-align: center;
     font-size: 35px;
 }
 
-.sites_div {
+.sites_div,
+.misc_div {
     width: 300px;
     height: 150px;
     display: flex;
@@ -116,7 +119,8 @@ body {
     letter-spacing: 3px;
 }
 
-.bicycle_text {
+.bicycle_text,
+.svg-animation_text {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50%;
 }
@@ -241,4 +245,16 @@ body {
     text-align: center;
     padding: 7px 10px 0 0;
     transform: rotate(-45deg);
+}
+
+.misc {
+    margin-top: 20px;
+}
+
+.svg-animation {
+    font-size: 40px;
+    font-family: 'PT Sans';
+    font-weight: bold;
+    color: rgba(220, 0, 0, 0.8);
+    background-image: url("../img/risperidone.svg");
 }
