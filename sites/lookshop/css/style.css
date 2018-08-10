@@ -629,7 +629,8 @@ body {
   content: "";
   width: 35%;
   height: 1px;
-  background-color: #d8d8d8; }
+  background-color: #d8d8d8;
+  top:49.5%; }
 
 .clearance_logo:before {
   left: 0; }
