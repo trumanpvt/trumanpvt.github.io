@@ -5,19 +5,72 @@
     <meta charset="UTF-8">
     <title>TVZavr</title>
     <style>
-        .main {width: 600px; height: 480px; position: relative;}
-        .main > div { float: left;}
-        .arrow {width:50px; height: 50px; margin: 70px 0 0 0; background: grey; border-radius: 50%; text-align: center; line-height: 50px;}
-        .focused {background: yellowgreen;}
-        .carousel {width: 80%; height: 40%; overflow: hidden; }
-        .carousel > div {float: left; border: solid 1px black; width: 20%; height: 90%; margin: 10px;}
+    .main {
+        min-width: 320px;
+        max-width: 666px;
+        height: 480px;
+        position: relative;
+        margin: 0 auto;
+    }
 
-        .test {position: absolute; top: 200px;}
-        .dn {display: none !important;}
-        .db {display: block !important;}
+    .main>div {
+        float: left;
+    }
+
+    .arrow {
+        width: 25px;
+        height: 25px;
+        margin: 70px 0 0 0;
+        background: grey;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .focused {
+        background: yellowgreen;
+    }
+
+    .carousel {
+        width: 80%;
+        height: 40%;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .carousel>div {
+        border: solid 1px black;
+        max-width: 100px;
+        min-width: 50px;
+        width: 20%;
+        height: 90%;
+        margin: 10px;
+        display: inline-block;
+    }
+
+    .test {
+        position: absolute;
+        top: 200px;
+    }
+
+    .dn {
+        display: none !important;
+    }
+
+    .db {
+        display: block !important;
+    }
+
+    @media only screen and (min-width: 760px) {
+        .arrow {
+            width: 50px;
+            height: 50px;
+            margin: 70px 0 0 0;
+            line-height: 50px;
+        }
+    }
     </style>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 </head>
 
 <body>
@@ -37,57 +90,56 @@
         </div>
         <div class="arrow">&gt;</div>
     </div>
+    <script>
+    'use strict';
 
- <script>
-'use strict';
+    (function() {
+        var arr = document.querySelectorAll('.carousel > div');
+        var arrowLeft = document.getElementsByClassName('arrow')[0];
+        var arrowRight = document.getElementsByClassName('arrow')[1];
 
-(function() {
-    var arr = document.querySelectorAll('.carousel > div');
-    var arrowLeft = document.getElementsByClassName('arrow')[0];
-    var arrowRight = document.getElementsByClassName('arrow')[1];
+        function slideRight() {
 
-    function slideRight() {
+            arrowRight.style.opacity = '0.7';
+            var timerId = setTimeout(function() { arrowRight.style.opacity = '1' }, 100);
 
-        arrowRight.style.opacity = '0.7';
-        var timerId = setTimeout(function() { arrowRight.style.opacity = '1' }, 100);
+            var firstSlide = arr[0].innerHTML;
+            for (var i = 0; i < arr.length - 1; i++) arr[i].innerHTML = arr[i + 1].innerHTML;
+            arr[arr.length - 1].innerHTML = firstSlide;
+        };
 
-        var firstSlide = arr[0].innerHTML;
-        for (var i = 0; i < arr.length - 1; i++) arr[i].innerHTML = arr[i + 1].innerHTML;
-        arr[arr.length - 1].innerHTML = firstSlide;
-    };
+        function slideLeft() {
 
-    function slideLeft() {
+            arrowLeft.style.opacity = '0.7';
+            var timerId = setTimeout(function() { arrowLeft.style.opacity = '1' }, 100);
 
-        arrowLeft.style.opacity = '0.7';
-        var timerId = setTimeout(function() { arrowLeft.style.opacity = '1' }, 100);
-
-        var lastSlide = arr[arr.length - 1].innerHTML;
-        for (var i = arr.length - 1; i > 0; i--) arr[i].innerHTML = arr[i - 1].innerHTML;
-        arr[0].innerHTML = lastSlide;
-    };
+            var lastSlide = arr[arr.length - 1].innerHTML;
+            for (var i = arr.length - 1; i > 0; i--) arr[i].innerHTML = arr[i - 1].innerHTML;
+            arr[0].innerHTML = lastSlide;
+        };
 
 
-    arrowRight.addEventListener("click", slideRight);
-    arrowLeft.addEventListener("click", slideLeft);
-    addEventListener('keydown', slider);
+        arrowRight.addEventListener("click", slideRight);
+        arrowLeft.addEventListener("click", slideLeft);
+        addEventListener('keydown', slider);
 
-    function slider(e) {
+        function slider(e) {
 
-        switch (e.keyCode) {
+            switch (e.keyCode) {
 
-            case 37:
-                slideLeft();
-                break;
+                case 37:
+                    slideLeft();
+                    break;
 
-            case 39:
-                slideRight();
-                break;
+                case 39:
+                    slideRight();
+                    break;
 
+            }
         }
-    }
 
-})();
-</script>
+    })();
+    </script>
 </body>
 
 </html>
