@@ -4,6 +4,8 @@ var carousel = document.getElementsByClassName('carousel');
 var divs = carousel[0].getElementsByTagName('*');
 var currentSlide = 1;
 var length = divs.length;
+var arrowLeft = document.getElementsByClassName('arrow')[0];
+var arrowRight = document.getElementsByClassName('arrow')[1];
 
 function slideLeft() {
 
@@ -15,6 +17,11 @@ function slideLeft() {
             divs[currentSlide - 1].style.display = 'block';
         }
     }
+
+    arrowLeft.style.opacity = '0.7';
+
+    var timerId = setTimeout(function() { arrowLeft.style.opacity = '1' }, 100);
+
     console.log('left');
     console.log('currentSlide: ' + currentSlide);
     console.log('length: ' + length);
@@ -26,10 +33,14 @@ function slideRight() {
         divs[currentSlide].classList.remove('focused');
         divs[currentSlide += 1].classList.add('focused');
 
-        if (currentSlide + 2 < length) {
+        if (currentSlide + 2 < length && currentSlide - 2 >= 0) {
             divs[currentSlide - 2].style.display = 'none';
         }
     }
+
+    arrowRight.style.opacity = '0.7';
+    
+    var timerId = setTimeout(function() { arrowRight.style.opacity = '1' }, 100);
 
     console.log('right');
     console.log('currentSlide: ' + currentSlide);
