@@ -22,9 +22,9 @@ function slideLeft() {
 
     var timerId = setTimeout(function() { arrowLeft.style.opacity = '1' }, 100);
 
-    console.log('left');
-    console.log('currentSlide: ' + currentSlide);
-    console.log('length: ' + length);
+    // console.log('left');
+    // console.log('currentSlide: ' + currentSlide);
+    // console.log('length: ' + length);
 }
 
 function slideRight() {
@@ -39,12 +39,12 @@ function slideRight() {
     }
 
     arrowRight.style.opacity = '0.7';
-    
+
     var timerId = setTimeout(function() { arrowRight.style.opacity = '1' }, 100);
 
-    console.log('right');
-    console.log('currentSlide: ' + currentSlide);
-    console.log('length: ' + length);
+    // console.log('right');
+    // console.log('currentSlide: ' + currentSlide);
+    // console.log('length: ' + length);
 }
 
 
