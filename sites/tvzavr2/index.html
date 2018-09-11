@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>TVZavr</title>
+    <title>TVZavr2</title>
     <style>
         .main {width: 600px; height: 480px; position: relative;}
         .main > div { float: left;}
@@ -37,39 +37,52 @@
         </div>
         <div class="arrow">&gt;</div>
     </div>
-
- <script>
+    
+<script>
 'use strict';
 
 (function() {
-    var arr = document.querySelectorAll('.carousel > div');
+    var carousel = document.getElementsByClassName('carousel');
+    var arr = carousel[0].getElementsByTagName('*');
+    var currentSlide = 1;
+    var length = arr.length;
     var arrowLeft = document.getElementsByClassName('arrow')[0];
     var arrowRight = document.getElementsByClassName('arrow')[1];
 
-    function slideRight() {
-
-        arrowRight.style.opacity = '0.7';
-        var timerId = setTimeout(function() { arrowRight.style.opacity = '1' }, 100);
-
-        var firstSlide = arr[0].innerHTML;
-        for (var i = 0; i < arr.length - 1; i++) arr[i].innerHTML = arr[i + 1].innerHTML;
-        arr[arr.length - 1].innerHTML = firstSlide;
-    };
-
     function slideLeft() {
 
+        if (currentSlide > 0) {
+            arr[currentSlide].classList.remove('focused');
+            arr[currentSlide -= 1].classList.add('focused');
+
+            if (currentSlide - 1 >= 0) {
+                arr[currentSlide - 1].style.display = 'block';
+            }
+        }
+
         arrowLeft.style.opacity = '0.7';
+
         var timerId = setTimeout(function() { arrowLeft.style.opacity = '1' }, 100);
 
-        var lastSlide = arr[arr.length - 1].innerHTML;
-        for (var i = arr.length - 1; i > 0; i--) arr[i].innerHTML = arr[i - 1].innerHTML;
-        arr[0].innerHTML = lastSlide;
-    };
+    }
 
+    function slideRight() {
 
-    arrowRight.addEventListener("click", slideRight);
-    arrowLeft.addEventListener("click", slideLeft);
-    addEventListener('keydown', slider);
+        if (currentSlide < length - 1) {
+            arr[currentSlide].classList.remove('focused');
+            arr[currentSlide += 1].classList.add('focused');
+
+            if (currentSlide + 2 < length && currentSlide - 2 >= 0) {
+                arr[currentSlide - 2].style.display = 'none';
+            }
+        }
+
+        arrowRight.style.opacity = '0.7';
+
+        var timerId = setTimeout(function() { arrowRight.style.opacity = '1' }, 100);
+
+    }
+
 
     function slider(e) {
 
@@ -85,6 +98,12 @@
 
         }
     }
+
+    addEventListener('keydown', slider);
+
+    arrowLeft.addEventListener('click', slideLeft);
+
+    arrowRight.addEventListener('click', slideRight);
 
 })();
 </script>
