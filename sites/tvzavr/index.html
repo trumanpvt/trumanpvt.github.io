@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TVZavr</title>
+    <style>
+        .main {width: 600px; height: 480px; position: relative;}
+        .main > div { float: left;}
+        .arrow {width:50px; height: 50px; margin: 70px 0 0 0; background: grey; border-radius: 50%; text-align: center; line-height: 50px;}
+        .focused {background: yellowgreen;}
+        .carousel {width: 80%; height: 40%; overflow: hidden; }
+        .carousel > div {float: left; border: solid 1px black; width: 20%; height: 90%; margin: 10px;}
+
+        .test {position: absolute; top: 200px;}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="arrow">&lt;</div>
+        <div class="carousel">
+            <div>1</div>
+            <div class="focused">2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+        <div class="arrow">&gt;</div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
