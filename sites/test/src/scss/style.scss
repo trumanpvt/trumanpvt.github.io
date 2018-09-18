@@ -1,7 +1,48 @@
-body {
-	background: red;
+$font-base: 15px;
+
+@mixin font {
+    font-size: $font-base;
 }
 
-.test-div {
-	display: flex;
+@mixin pad ($pads...) {
+  padding: $pads;
 }
+
+body {
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+	background: #999999;
+	height: 200px;
+}
+
+.container {
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.header-nav {
+	width: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.header-nav__link {
+	@include font;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #888888;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 1px solid #777777;
+}
+
+@function remy($pxsize) {
+    @return ($pxsize/16)+rem;
+}
+
+h1 { font-size: remy(32); }
