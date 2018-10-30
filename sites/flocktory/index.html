@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Верстка email</title>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    .container {
+    	width: 90%;
+    	margin: 0 auto;
+    }
+	.heading {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+    .code {
+        font-family: Consolas, Menlo, Monaco, "Lucida Console", "Liberation Mono", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", monospace;
+        background-color: #f0f0f0;
+        font-size: 13px;
+        color: #000;
+        display: block;
+        margin-top: 15px;
+    }
+
+    .code_color {
+        color: red;
+    }
+
+    .list__item {
+    	padding-bottom: 20px;
+    }
+
+    .list__link {
+    	margin-bottom: 10px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="outlook">
+            <h1 class="heading">Outlook</h1>
+            <ul class="list">
+                <li class="list__item">1: Border-radius: 
+                    <a class="list__link" href="https://stackoverflow.com/a/22657913" target="_blank">https://stackoverflow.com/a/22657913</a> 
+                    <code class="code">    &lt;div&gt; <br>
+    &lt;!--[if mso]&gt; <br>
+    &lt;v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://www.EXAMPLE.com/" style="height:40px;v-text-anchor:middle;width:300px;" arcsize="10%" stroke="f" fillcolor="#d62828"&gt; <br>
+        &lt;w:anchorlock/&gt; <br>
+        &lt;center style="color:#ffffff;font-family:sans-serif;font-size:16px;font-weight:bold;"&gt; <br>
+            Button Text Here!
+        &lt;/center&gt; <br>
+    &lt;/v:roundrect&gt; <br>
+    &lt;![endif]--&gt; <br>
+    &lt;!--[if !mso]&gt; &lt;!--&gt; <br>
+    <span class="code_color">&lt;table cellspacing="0" cellpadding="0"&gt; &lt;tr&gt; <br>
+        &lt;td align="center" width="300" height="40" bgcolor="#d62828" style="-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; color: #ffffff; display: block;"&gt; <br>
+            &lt;a href="http://www.EXAMPLE.com/" style="color: #ffffff; font-size:16px; font-weight: bold; font-family:sans-serif; text-decoration: none; line-height:40px; width:100%; display:inline-block"&gt; <br>
+                Button Text Here!
+            &lt;/a&gt; <br>
+        &lt;/td&gt; <br>
+    &lt;/tr&gt; &lt;/table&gt; </span><br>
+    &lt;!-- &lt;![endif]--&gt; <br>
+&lt;/div&gt;
+</code>
+                </li>
+                <li class="list__item">2: Background-image:
+                    <a class="list__link" href="https://backgrounds.cm/" target="_blank">https://backgrounds.cm/</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
