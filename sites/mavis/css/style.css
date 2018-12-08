@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #000; }
+
+.container {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto; }
+
+.border-bottom {
+  border-bottom: 1px solid #fff; }
+
+.margin-bottom {
+  margin-bottom: 10px;
+  display: inline-block; }
+
+.color {
+  color: #01aaad; }
+
+.header {
+  width: 100%;
+  padding: 20px; }
+
+.header-text {
+  font-size: 18px;
+  font-weight: bold; }
+
+.header-text_green {
+  font-size: 22.5px;
+  color: #98cc45; }
+
+.body {
+  width: 100%; }
+
+.body-header {
+  font-size: 26.5px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto; }
+
+.body-list-main {
+  width: 85%;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center; }
+
+.body-list-main__item {
+  width: 100%;
+  background: #7aba50;
+  margin-top: 20px;
+  padding: 5px 16px; }
+
+.body-list-main__text {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500; }
+
+.body-list-main__link {
+  color: #000;
+  font-weight: 700; }
+
+.body-list-main__text_white {
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff; }
+
+.body-list-main__text_bold {
+  font-weight: bold; }
+
+.body-header-problems {
+  margin: 30px auto 10px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold; }
+
+.body-list-problems {
+  width: 85%;
+  margin: 0 auto;
+  list-style: none;
+  text-align: left;
+  padding-top: 15px; }
+
+.body-list-problems__item {
+  margin-bottom: 20px; }
+
+.body-list-problems__text {
+  font-size: 15px;
+  max-width: 300px;
+  font-weight: 500; }
+
+.body-header-solutions {
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 430px;
+  text-align: center;
+  margin: 30px auto 0; }
+
+.body-list-solutions {
+  width: 85%;
+  margin: 0 auto 0 35px;
+  text-align: left; }
+
+.body-list-solutions__item {
+  margin-top: 20px; }
+
+.footer-header {
+  font-size: 25px;
+  font-weight: bold;
+  width: 100%;
+  max-width: 430px;
+  text-align: center;
+  margin: 30px auto 20px; }
+
+.footer-text {
+  width: 85%;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto 30px; }
